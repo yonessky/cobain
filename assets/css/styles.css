@@ -508,16 +508,20 @@ body.dark-theme {
 
 
 /*=============== ABOUT ===============*/
+.about {
+  margin-bottom: -2rem;
+}
+
 .about__container {
   display: flex;
   align-items: center;
-  margin-bottom: .250rem;
   flex-wrap: wrap;
 }
 
 .about__description {
   font-size: var(--small-font-size);
   margin-bottom: 2rem;
+  margin-right: 1rem;
   text-align: justify;
 }
 .about__lead {
@@ -542,6 +546,7 @@ body.dark-theme {
 .counter-item {
   justify-content: center;
   flex: 1 0 0%;
+  margin-right: .50rem;
 }
 
 .counter__description {
@@ -563,7 +568,7 @@ body.dark-theme {
 .list__container {
   display: flex;
   align-items: center;
-  margin-bottom: 2rem;
+  margin-bottom: 1rem;
   flex: 0 0 100%;
   max-width: 100%;
 }
@@ -644,6 +649,12 @@ body.dark-theme {
 /*---------------------------
     CALL TO ACTION
 --------------------------*/
+.aboutcta__container {
+  display: flex;
+  align-items: center;
+  flex: 0 0 100%;
+  max-width: 100%;
+}
 .cta__banner {
   background-color: var(--first-color);
   max-width: 200px;
@@ -1183,7 +1194,7 @@ body.dark-theme {
     font-size: 25px;
   }
   .counter-item .counter__description {
-    font-size: 11px;
+    font-size: var(--small-font-size);
     line-height: 20px;
     padding-right: 0;
   }
@@ -1194,9 +1205,6 @@ body.dark-theme {
 
 @media screen and (max-width: 410px) {
   .list__container {
-    display: grid;
-  }
-  .counter__container {
     display: grid;
   }
 }
@@ -1250,6 +1258,7 @@ body.dark-theme {
     line-height: 20px;
     padding-right: 0;
   } 
+
 }
 
 @media screen and (min-width: 320px) {
@@ -1440,6 +1449,9 @@ body.dark-theme {
   .logos__img img {
     height: 100px;
   }
+  .about {
+    margin-bottom: -4rem;
+  }
   .popular__container {
     padding-top: 3rem;
   }
@@ -1473,7 +1485,8 @@ body.dark-theme {
     width: 490px;
   }
   .value__description,
-  .contact__description {
+  .contact__description,
+  .about__description {
     font-size: var(--normal-font-size);
     margin-bottom: 2.5rem;
   }
@@ -1535,6 +1548,10 @@ body.dark-theme {
     max-width: 50%;
   }
   .counter__container {
+    flex: 0 0 50%;
+    max-width: 50%;
+  }
+  .aboutcta__container {
     flex: 0 0 50%;
     max-width: 50%;
   }
