@@ -729,6 +729,9 @@ body.dark-theme {
 }
 
 /*=============== SERVICES ===============*/
+.services {
+  padding-bottom: 2px;
+}
 .features-carousel {
   overflow-x: hidden;
 }
@@ -738,6 +741,20 @@ body.dark-theme {
 .bg-img {
   position: relative;
   z-index: 1;
+}
+.heading__subtitle {
+  position: relative;
+  font-size: 15px;
+  font-weight: 700;
+  color: #fdb900;
+  display: block;
+  margin-bottom: 18px;
+}
+
+.heading__title {
+  position: relative;
+  font-size: 34px;
+  margin-bottom: 20px;
 }
 
 @media (min-width:992px) {
