@@ -175,3 +175,37 @@ $(".counter").counterUp({
   delay: 10,
   time: 4000,
 });
+
+/*==========   Slick Carousel ==========*/
+$(".slick-carousel").slick();
+
+$(".slider-with-navs").slick({
+  slidesToShow: 1,
+  slidesToScroll: 1,
+  arrows: false,
+  fade: false,
+  dots: false,
+  asNavFor: ".slider-nav",
+});
+
+$(".slider-nav").slick({
+  slidesToShow: 3,
+  slidesToScroll: 1,
+  asNavFor: ".slider-with-navs",
+  dots: false,
+  arrows: true,
+  centerMode: true,
+  focusOnSelect: true,
+  centerPadding: "15px",
+});
+
+/*----------  slick Carousel with Filter  ----------*/
+$("#slick-filter-buttons .nav__link").on("click", function (e) {
+  e.preventDefault();
+  $(this).addClass("active").siblings().removeClass("active");
+  var key = "." + $(this).data("value");
+
+  $("#filter-carousel").slick("slickUnfilter");
+  $("#filter-carousel").slick("slickFilter", key).slick("refresh");
+  $("#filter-carousel").slick("slickGoTo", 0);
+});
