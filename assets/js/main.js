@@ -209,3 +209,20 @@ $("#slick-filter-buttons .nav__link").on("click", function (e) {
   $("#filter-carousel").slick("slickFilter", key).slick("refresh");
   $("#filter-carousel").slick("slickGoTo", 0);
 });
+
+/*==========   Set Background-img to section   ==========*/
+$(".bg-img").each(function () {
+  var imgSrc = $(this).children("img").attr("src");
+  $(this)
+    .parent()
+    .css({
+      "background-image": "url(" + imgSrc + ")",
+      "background-size": "cover",
+      "background-position": "center",
+    });
+  $(this).parent().addClass("bg-img");
+  if ($(this).hasClass("background-size-auto")) {
+    $(this).parent().addClass("background-size-auto");
+  }
+  $(this).remove();
+});
