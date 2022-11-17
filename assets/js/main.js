@@ -211,7 +211,7 @@ $("#slick-filter-buttons .nav__link").on("click", function (e) {
 });
 
 /*==========   Set Background-img to section   ==========*/
-$(".bg-img").each(function () {
+$(".bg__img").each(function () {
   var imgSrc = $(this).children("img").attr("src");
   $(this)
     .parent()
@@ -220,7 +220,7 @@ $(".bg-img").each(function () {
       "background-size": "cover",
       "background-position": "center",
     });
-  $(this).parent().addClass("bg-img");
+  $(this).parent().addClass("bg__img");
   if ($(this).hasClass("background-size-auto")) {
     $(this).parent().addClass("background-size-auto");
   }
