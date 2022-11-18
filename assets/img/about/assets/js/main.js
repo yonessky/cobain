@@ -22,20 +22,6 @@ var swiperPopular = new Swiper(".popular__container", {
   },
 });
 
-// /*=============== SWIPER SERVICES ===============*/
-// var swiperPopular = new Swiper(".popular__container", {
-//   spaceBetweem: 32,
-//   grabCursor: true,
-//   centeredSlides: true,
-//   slidesPerView: "auto",
-//   loop: true,
-
-//   navigation: {
-//     nextEl: ".swiper-button-next",
-//     prevEl: ".swiper-button-prev",
-//   },
-// });
-
 /*=============== VALUE ACCORDION ===============*/
 const accordionItems = document.querySelectorAll(".value__accordion-item");
 
@@ -190,6 +176,28 @@ $(".counter").counterUp({
   time: 4000,
 });
 
+/*==========   Slick Carousel ==========*/
+$(".slick-carousel").slick();
+
+$(".slider-with-navs").slick({
+  slidesToShow: 1,
+  slidesToScroll: 1,
+  arrows: false,
+  fade: false,
+  dots: false,
+  asNavFor: ".slider-nav",
+});
+
+$(".slider-nav").slick({
+  slidesToShow: 3,
+  slidesToScroll: 1,
+  asNavFor: ".slider-with-navs",
+  dots: false,
+  arrows: true,
+  centerMode: true,
+  focusOnSelect: true,
+  centerPadding: "15px",
+});
 
 /*----------  slick Carousel with Filter  ----------*/
 $("#slick-filter-buttons .nav__link").on("click", function (e) {
@@ -202,3 +210,19 @@ $("#slick-filter-buttons .nav__link").on("click", function (e) {
   $("#filter-carousel").slick("slickGoTo", 0);
 });
 
+/*==========   Set Background-img to section   ==========*/
+$(".bg__img").each(function () {
+  var imgSrc = $(this).children("img").attr("src");
+  $(this)
+    .parent()
+    .css({
+      "background-image": "url(" + imgSrc + ")",
+      "background-size": "cover",
+      "background-position": "center",
+    });
+  $(this).parent().addClass("bg__img");
+  if ($(this).hasClass("background-size-auto")) {
+    $(this).parent().addClass("background-size-auto");
+  }
+  $(this).remove();
+});
