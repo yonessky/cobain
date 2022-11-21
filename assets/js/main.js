@@ -201,6 +201,29 @@ $("#slick-filter-buttons .nav__link").on("click", function (e) {
   $("#filter-carousel").slick("slickGoTo", 0);
 });
 
+/*==========   Slick Carousel ==========*/
+$(".slick-carousel").slick();
+
+$(".slider-with-navs").slick({
+  slidesToShow: 1,
+  slidesToScroll: 1,
+  arrows: false,
+  fade: false,
+  dots: false,
+  asNavFor: ".slider-nav",
+});
+
+$(".slider-nav").slick({
+  slidesToShow: 3,
+  slidesToScroll: 1,
+  asNavFor: ".slider-with-navs",
+  dots: false,
+  arrows: true,
+  centerMode: true,
+  focusOnSelect: true,
+  centerPadding: "15px",
+});
+
 /*==========   Set Background-img to section   ==========*/
 $(".bg-img").each(function () {
   var imgSrc = $(this).children("img").attr("src");
