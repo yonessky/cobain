@@ -22,19 +22,19 @@ var swiperPopular = new Swiper(".popular__container", {
   },
 });
 
-// /*=============== SWIPER SERVICES ===============*/
-// var swiperPopular = new Swiper(".popular__container", {
-//   spaceBetweem: 32,
-//   grabCursor: true,
-//   centeredSlides: true,
-//   slidesPerView: "auto",
-//   loop: true,
+/*=============== SWIPER SERVICES ===============*/
+var swiperPopular = new Swiper(".services__container", {
+  spaceBetweem: 32,
+  grabCursor: true,
+  centeredSlides: true,
+  slidesPerView: "auto",
+  loop: true,
 
-//   navigation: {
-//     nextEl: ".swiper-button-next",
-//     prevEl: ".swiper-button-prev",
-//   },
-// });
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
+});
 
 /*=============== VALUE ACCORDION ===============*/
 const accordionItems = document.querySelectorAll(".value__accordion-item");
