@@ -144,7 +144,6 @@ body.dark-theme {
 
 .dark-theme .nav,
 .dark-theme .home__img,
-
 .dark-theme .value__img,
 .dark-theme .accordion-open,
 .dark-theme .accordion-open .value__accordion-icon,
@@ -158,10 +157,6 @@ body.dark-theme {
 .dark-theme .popular__card:hover,
 .dark-theme .nav__menu {
   box-shadow: 0 0 6px var(--shadow-bright);
-}
-
-.dark-theme .about__lead span {
-  color: var(--shadow-bright);
 }
 
 .dark-theme .value__orbe,
@@ -792,9 +787,11 @@ body.dark-theme {
 .services {
   position: relative;
   margin-top: 4rem;
+  outline: 1px solid black;
 }
 
 .services__container {
+  margin: 0;
   padding: 1rem 0 3rem;
   outline: 1px solid black;
 }
@@ -817,16 +814,16 @@ body.dark-theme {
   margin-bottom: 1rem;
 }
 
-.services__item .services__item-icon {
+.services__item-icon {
   font-size: 55px;
   line-height: 1;
   color: #fdb900;
   margin-bottom: 30px;
 }
-
-.services__item .services__item-title {
-  font-size: 24px;
-  margin-bottom: 25px;
+.services__item-title {
+  font-size: var(--h2-font-size);
+  margin-bottom: 15px;
+  color: #fff;
 }
 
 .services__item .services__item-desc {
@@ -890,9 +887,14 @@ body.dark-theme {
 
 .features-carousel .services__item {
   padding: 50px;
-  background-color: #ffffff;
+  background-color: var(--container-color);
   -webkit-box-shadow: 0px 5px 83px 0px rgba(40, 40, 40, 0.04);
   box-shadow: 0px 5px 83px 0px rgba(40, 40, 40, 0.04);
+  transition: .4s;
+}
+
+.services span {
+  color: var(--shadow-bright);
 }
 
 .features-carousel {
@@ -944,26 +946,11 @@ body.dark-theme {
 /*-----------------------
     Features
 ------------------------*/
-
-@media (min-width: 1300px) {
-  .services__item {
-    padding-right: 70px;
-  }
-}
-
 @media (max-width: 992px) {
-  .feature-item .services__item-title {
-    font-size: 20px;
-    margin-bottom: 10px;
-  }
 
-  .feature-item .services__item-desc {
+  .services__item .services__item-desc {
     font-size: 14px;
     margin-bottom: 10px;
-  }
-
-  .features-carousel .services__item {
-    padding: 20px;
   }
 }
 
@@ -1514,13 +1501,22 @@ body.dark-theme {
   .counter-item .counter {
     font-size: 25px;
   }
-
   .counter-item .counter__description {
     font-size: 11px;
     line-height: 20px;
     padding-right: 0;
   }
-
+  .services__container {
+    margin: -0.50rem;
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+  .services__item-title {
+    font-size: 1rem;
+  }
+  .features-carousel .services__item {
+    padding: 10px;
+  }
 }
 
 @media screen and (min-width: 320px) {
@@ -1528,19 +1524,26 @@ body.dark-theme {
     padding-top: 50px;
     padding-bottom: 50px;
   }
-
   .counter-item .counter {
     font-size: 25px;
   }
-
   .counter-item .counter__description {
     font-size: 11px;
     line-height: 20px;
     padding-right: 0;
     max-width: 100%;
   }
-
-}
+  .services__container {
+    margin: 0;
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+  .services__item-title {
+    font-size: 1.4rem;
+  }
+  .features-carousel .services__item {
+    padding: 25px;
+  }
 
 /* For medium devices */
 @media screen and (min-width: 576px) {
@@ -1580,20 +1583,16 @@ body.dark-theme {
     padding-right: 0;
     max-width: 100%;
   }
-
   .about__lead {
     max-width: 100%;
   }
-
-  .services__slide {
-    position: relative;
+  .services__container {
+    margin: 0;
     flex: 0 0 100%;
     max-width: 100%;
   }
-
-  .services__container {
-    flex: 0 0 100%;
-    max-width: 100%;
+  .services__item-title {
+    font-size: 1.5rem;
   }
 }
 
@@ -1645,8 +1644,15 @@ body.dark-theme {
   }
 
   .services__container {
+    margin: .4rem;
     flex: 0 0 100%;
     max-width: 100%;
+  }
+  .services__item-title {
+    font-size: 2rem;
+  }
+  .features-carousel .services__item {
+    padding: 30px;
   }
 }
 
@@ -1655,248 +1661,192 @@ body.dark-theme {
   section {
     padding: 7.5rem 0 1rem;
   }
-
   .section__title {
     font-size: 2.25rem;
   }
-
   .section__subtitle {
     font-size: var(--normal-font-size);
   }
-
   .nav {
     height: calc(var(--header-height) + 1.5rem);
   }
-
   .dark-theme .nav__menu {
     box-shadow: none;
   }
-
   .nav__menu {
     width: initial;
     margin-left: auto;
     box-shadow: none;
   }
-
   .nav__list {
     display: flex;
     column-gap: 3rem;
   }
-
   .nav__link {
     color: var(--text-color-light);
   }
-
   .nav__link i {
     display: none;
   }
-
   .nav__button {
     display: inline-block;
   }
-
   .active-link {
     background: none;
     box-shadow: none;
     color: var(--first-color);
     font-weight: var(--font-medium);
   }
-
   .change-theme {
     margin: 0 3rem;
     color: var(--text-color-light);
   }
-
   .scroll-header .nav__link,
   .scroll-header .change-theme {
     color: var(--text-color);
   }
-
   .scroll-header .active-link {
     color: var(--first-color);
   }
-
   .home {
     padding-bottom: 0;
   }
-
   .home__container {
     padding-top: 5rem;
     column-gap: 2rem;
   }
-
   .home__data {
     padding-bottom: 4rem;
   }
-
   .home__title {
     margin-bottom: 2rem;
   }
-
   .home__description,
   .home__search {
     margin-bottom: 3rem;
   }
-
   .home__value {
     column-gap: 3.5rem;
   }
-
   .home__orbe {
     width: 504px;
     height: 611px;
     border-radius: 256px 256px 0 0;
   }
-
   .logos__orbe {
     width: 980px;
     height: 551px;
   }
-
   .home__img {
     width: 472px;
     height: 634px;
     border-radius: 236px 236px 12px 12px;
     bottom: -2.5rem;
   }
-
   .logos__img img {
     height: 100px;
   }
-
   .about {
     margin-bottom: -4rem;
   }
-
   .popular__container {
     padding-top: 3rem;
   }
-
   .popular__card {
     width: 320px;
     padding: .75rem .75rem 2rem;
   }
-
   .popular__data {
     padding: 0 .25rem 0 .75rem;
   }
-
   .value__container,
   .contact__container {
     align-items: flex-start;
     column-gap: 5rem;
   }
-
   .value__orbe,
   .contact__orbe {
     width: 501px;
     height: 641px;
     border-radius: 258px 258px 16px 16px;
   }
-
   .value__img,
   .contact__img {
     width: 461px;
     height: 601px;
     border-radius: 238px 238px 12px 12px;
   }
-
   .value__img img,
   .contact__img img {
     max-width: initial;
     width: 490px;
   }
-
   .value__description,
   .contact__description,
-  .about__description {
+  .about__description,
+  .services__item-desc {
     font-size: var(--normal-font-size);
     margin-bottom: 2.5rem;
   }
-
   .value__accordion-title {
     font-size: var(--normal-font-size);
   }
-
   .value__accordion-item {
     padding: 1.25rem 1.25rem 1.25rem 1rem;
   }
-
   .value__accordion-description {
     padding-bottom: 1rem;
     font-size: var(--small-font-size);
   }
-
   .contact__card {
     grid-template-columns: repeat(2, 200px);
   }
-
   .contact__card-box {
     padding: 28px 1.5rem 1.5rem;
   }
-
   .subscribe__container {
     padding: 4rem 10rem 4.5rem;
     border-radius: 2rem;
     border: 12px solid var(--first-color-light);
   }
-
   .subscribe__title {
     font-size: 2.5rem;
     margin-bottom: 1.5rem;
   }
-
   .subscribe__description {
     font-size: var(--normal-font-size);
     padding: 0 8rem;
   }
-
   .subscribe__button {
     font-size: var(--normal-font-size);
   }
-
   .footer__content {
     grid-template-columns: repeat(4, max-content);
   }
-
   .footer__title {
     margin-bottom: 1.5rem;
   }
-
   .footer__links {
     row-gap: 1rem;
   }
-
   .footer__info {
     flex-direction: row;
     justify-content: space-between;
     padding-bottom: 2rem;
   }
-
   .show-scroll {
     bottom: 3rem;
     right: 3rem;
   }
-
   .about .counter__container .counter-item {
     margin-left: 30px;
   }
-
-  .about__lead {
-    flex: 0 0 50%;
-    max-width: 50%;
-  }
-
+  .about__lead,
+  .aboutcta__container,
   .counter__container {
     flex: 0 0 50%;
     max-width: 50%;
   }
-
-  .aboutcta__container {
-    flex: 0 0 50%;
-    max-width: 50%;
-  }
-
   .counter-item .counter {
     color: var(--first-color);
     font-size: 60px;
@@ -1904,17 +1854,22 @@ body.dark-theme {
     line-height: 1;
     margin-bottom: 20px;
   }
-
   .counter-item .counter__description {
     font-size: 15px;
     font-weight: 700;
     margin-bottom: 0;
     padding-right: 40px;
   }
-
   .services__container {
+    margin: 1rem;
     flex: 0 0 100%;
     max-width: 100%;
+  }
+  .services__item-title {
+    font-size: 2.25rem;
+  }
+  .features-carousel .services__item {
+    padding: 40px;
   }
 }
 
