@@ -640,7 +640,7 @@ body.dark-theme {
 }
 
 .list__items {
-  display: flex;
+  display: inline-flex;
   align-items: center;
   margin-bottom: 0.50rem;
   margin-right: 1rem;
@@ -842,48 +842,59 @@ body.dark-theme {
   left: 0;
   width: 0;
   height: 2px;
-  background-color: #fdb900;
+  background-color: var(--shadow-bright);
   -webkit-transition: width 0.6s ease;
   transition: width 0.6s ease;
 }
 
-.services__item .btn__link {
+.btn {
+    display: inline-flex;
+    align-items: center;
+}
+
+.btn span {
+  font-size: 17px;
+  margin-left: .50rem;
+  color: var(--first-color);
+}
+
+.services__item:hover .btn span {
+  font-size: 20px;
+  transition: all 0.3s linear;
+  color: var(--shadow-bright);
+}
+
+.services__item .btn {
   height: 32px;
   line-height: 32px;
 }
 
-.services__item .btn__link i {
+.services__item .btn i {
+  padding-left: 1px;
+  font-size: 18px;
   width: 22px;
   height: 22px;
   line-height: 22px;
-  background-color: #0e2b5c;
-  color: #ffffff;
+  background-color: var(--first-color);
+  color: var(--body-color);
   border-radius: 50%;
   display: inline-block;
-  -webkit-transition: all 0.3s linear;
   transition: all 0.3s linear;
 }
 
-.services__item:hover .services__item-icon {
-  -webkit-animation: slideTopDown 1s infinite alternate;
-  animation: slideTopDown 1s infinite alternate;
+.services__item:hover .btn i {
+  font-size: 25px;
+  width: 30px;
+  height: 30px;
+  line-height: 30px;
+  color: #ffffff;
+  background-color: var(--shadow-bright);
 }
 
 .services__item:hover .services__item-desc:after {
   width: 100%;
 }
 
-.services__item:hover .btn__link {
-  color: #fdb900;
-}
-
-.services__item:hover .btn__link i {
-  width: 30px;
-  height: 30px;
-  line-height: 30px;
-  color: #ffffff;
-  background-color: #fdb900;
-}
 
 .features-carousel .services__item {
   padding: 50px;
@@ -893,28 +904,8 @@ body.dark-theme {
   transition: .4s;
 }
 
-.services span {
-  color: var(--shadow-bright);
-}
-
 .features-carousel {
   overflow-x: hidden;
-}
-
-
-/* .bg__image {
-  outline: 1px solid black;
-  padding: 10em;
-  background-color: #074f57;
-  background-image: url("../img/backgrounds/mapp.png");
-  background-repeat: no-repeat;
-
-  background-blend-mode: multiply;
-} */
-
-
-.heading__services {
-  margin-bottom: 40px;
 }
 
 .bg-img {
@@ -924,21 +915,6 @@ body.dark-theme {
 
 .background-size-auto {
   background-size: auto;
-}
-
-.heading__subtitle {
-  position: relative;
-  font-size: 15px;
-  font-weight: 700;
-  color: #fdb900;
-  display: block;
-  margin-bottom: 18px;
-}
-
-.heading__title {
-  position: relative;
-  font-size: 34px;
-  margin-bottom: 20px;
 }
 
 
@@ -1507,7 +1483,7 @@ body.dark-theme {
     padding-right: 0;
   }
   .services__container {
-    margin: -0.50rem;
+    margin: 0;
     flex: 0 0 100%;
     max-width: 100%;
   }
