@@ -796,13 +796,15 @@ body.dark-theme {
 .services {
   position: relative;
   margin-top: 4rem;
-  /* outline: 1px solid black; */
+  /* outline: 1px solid limegreen; */
 }
 
 .services__container {
   margin: 0;
   padding: 1rem 0 3rem;
-  /* outline: 1px solid black; */
+  /* margin-inline: auto;
+  width: min(100% - 2rem, 600px); */
+  /* outline: 1px solid limegreen; */
 }
 
 .heading span {
