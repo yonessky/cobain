@@ -588,7 +588,6 @@ body.dark-theme {
 }
 
 .about__description {
-  font-size: var(--small-font-size);
   margin-bottom: 2rem;
   margin-right: 1rem;
   text-align: justify;
@@ -661,16 +660,21 @@ body.dark-theme {
   transition: .3s;
 }
 
+@media (max-width: 576px) {
+  .list__icon {
+    font-size: 17px;
+  }
+}
+
 .list__title {
-  font-size: var(--small-font-size);
+  font-size: var(--normal-font-size);
 }
 
 
 /* Extra Small Devices */
-@media (min-width: 320px) and (max-width: 767px) {
-  .list-items li {
-    font-size: 15px;
-    font-weight: 400;
+@media (max-width: 767px) {
+  .list__container .list__title {
+    font-size: var(--small-font-size);
   }
 }
 
@@ -810,6 +814,37 @@ body.dark-theme {
   margin-bottom: 1rem;
 }
 
+.services__list {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1rem;
+  flex: 0 0 100%;
+  max-width: 100%;
+}
+
+.services__list-item {
+  display: inline-flex;
+  align-items: center;
+  margin-bottom: 0.50rem;
+  margin-right: 1rem;
+}
+
+.services__list-title {
+  font-size: var(--normal-font-size);
+}
+
+@media screen and (max-width: 576px) {
+  .services__list {
+    display: grid;
+  }
+}
+
+@media (max-width: 767px) {
+  .services__list-title {
+    font-size: var(--small-font-size);
+  }
+}
+
 .services__item {
   position: relative;
   margin-bottom: 30px;
@@ -823,22 +858,19 @@ body.dark-theme {
   margin-bottom: 1rem;
 }
 
-.services__item-icon {
-  font-size: 55px;
-  line-height: 1;
-  color: #fdb900;
-  margin-bottom: 30px;
-}
-
 .services__item-title {
   font-size: var(--h2-font-size);
   margin-bottom: 25px;
   color: var(--first-color);
 }
 
+.services__item-desc {
+  color: var(--title-color);
+}
+
 .services__item .services__item-desc {
   position: relative;
-  font-size: 15px;
+  font-size: var(--normal-font-size);
   line-height: 25px;
   padding-bottom: 20px;
   margin-bottom: 30px;
@@ -932,10 +964,14 @@ body.dark-theme {
 /*-----------------------
     Features
 ------------------------*/
-@media (max-width: 992px) {
+@media (max-width: 576px) {
+
+  .about__description {
+    font-size: var(--small-font-size);
+  }
 
   .services__item .services__item-desc {
-    font-size: 14px;
+    font-size: var(--small-font-size);
     margin-bottom: 10px;
   }
 }

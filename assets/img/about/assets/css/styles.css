@@ -587,7 +587,7 @@ body.dark-theme {
 }
 
 .about__description {
-  font-size: var(--small-font-size);
+  font-size: var(--normal-font-size);
   margin-bottom: 2rem;
   margin-right: 1rem;
   text-align: justify;
