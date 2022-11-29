@@ -657,6 +657,7 @@ body.dark-theme {
   font-size: 20px;
   color: var(--body-color);
   margin-right: .75rem;
+  
   transition: .3s;
 }
 
@@ -819,9 +820,9 @@ body.dark-theme {
 .services__list {
   display: flex;
   align-items: center;
-  margin-bottom: 1rem;
   flex: 0 0 100%;
   max-width: 100%;
+  color: var(--body-color);
 }
 
 .services__list-item {
@@ -961,7 +962,62 @@ body.dark-theme {
   background-size: auto;
 }
 
+.services__accordion-item {
+  /* outline: 1px solid black; */
+  padding: 5px 10px 10px;
+  border-radius: .50rem;
+  margin-bottom: 5px;
+}
 
+.services__accordion-header {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  padding: 5px 10px 10px 0;
+  /* outline: 1px solid black; */
+}
+
+.services__accordion-content {
+  overflow: hidden;
+  height: 0;
+  transition: all .25s ease;
+  margin-bottom: 100rem;
+}
+.services__accordion-title {
+  font-size: var(--small-font-size);
+}
+
+.services__accordion-arrow {
+  display: inline-flex;
+  background-color: var(--first-color-lighten);
+  padding: .25rem;
+  color: var(--first-color);
+  border-radius: 2px;
+  font-size: 13px;
+  margin-left: auto;
+  transition: .3s;
+}
+
+.services__accordion-arrow i {
+  transition: .4s;
+}
+
+/*Rotate icon and add shadows*/
+.accordion-open {
+  box-shadow: 0 12px 32px hsla(228, 66%, 45%, .1);
+}
+
+.accordion-open .services__accordion-icon {
+  box-shadow: 0 4px 4px hsla(228, 66%, 45%, .1);
+}
+
+.accordion-open .services__accordion-arrow {
+  box-shadow: 0 2px 4px hsla(228, 66%, 45%, .1);
+}
+
+.accordion-open .services__accordion-arrow i {
+  transform: rotate(-180deg);
+}
 
 /*-----------------------
     Features
@@ -1568,6 +1624,9 @@ body.dark-theme {
   .features-carousel .services__item {
     padding: 25px;
   }
+  .services__accordion-arrow {
+    font-size: 11px;
+  }
 
 /* For medium devices */
 @media screen and (min-width: 576px) {
@@ -1617,6 +1676,9 @@ body.dark-theme {
   }
   .services__item-title {
     font-size: 1.5rem;
+  }
+  .services__accordion-title {
+    font-size: var(--normal-font-size);
   }
 }
 
@@ -1676,8 +1738,9 @@ body.dark-theme {
     font-size: 2rem;
   }
   .features-carousel .services__item {
-    padding: 30px;
+    padding: 25px;
   }
+  
 }
 
 /* For large devices */
@@ -1818,6 +1881,9 @@ body.dark-theme {
   .value__accordion-item {
     padding: 1.25rem 1.25rem 1.25rem 1rem;
   }
+  .services__accordion-item {
+    padding: 1.25rem 1.25rem 1.25rem 1rem;
+  }
   .value__accordion-description {
     padding-bottom: 1rem;
     font-size: var(--small-font-size);
@@ -1894,6 +1960,13 @@ body.dark-theme {
   }
   .features-carousel .services__item {
     padding: 40px;
+  }
+  .services__accordion-header {
+    margin-top: -1.5rem;
+    /* outline: 1px solid black; */
+  }
+  .services__accordion-arrow {
+    font-size: 17px;
   }
 }
 

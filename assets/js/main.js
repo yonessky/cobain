@@ -37,10 +37,10 @@ var swiperPopular = new Swiper(".services__container", {
 });
 
 /*=============== VALUE ACCORDION ===============*/
-const accordionItems = document.querySelectorAll(".value__accordion-item");
+const accordionItems = document.querySelectorAll(".value__accordion-item, .services__accordion-item");
 
 accordionItems.forEach((item) => {
-  const accordionHeader = item.querySelector(".value__accordion-header");
+  const accordionHeader = item.querySelector(".value__accordion-header, .services__accordion-header");
 
   accordionHeader.addEventListener("click", () => {
     const openItem = document.querySelector(".accordion-open");
@@ -64,6 +64,7 @@ const toggleItem = (item) => {
     item.classList.add("accordion-open");
   }
 };
+
 
 /*=============== SCROLL SECTIONS ACTIVE LINK ===============*/
 const sections = document.querySelectorAll("section[id]");
