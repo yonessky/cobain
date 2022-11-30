@@ -942,9 +942,10 @@ body.dark-theme {
 
 
 .features-carousel .services__item {
+  width: 290px;
+  margin: 8px;
   padding: 50px;
   background-color: var(--container-color);
-  -webkit-box-shadow: 0px 5px 83px 0px rgba(40, 40, 40, 0.04);
   box-shadow: 0px 5px 83px 0px rgba(40, 40, 40, 0.04);
   transition: .4s;
 }
@@ -1591,11 +1592,12 @@ body.dark-theme {
     flex: 0 0 100%;
     max-width: 100%;
   }
+  .features-carousel .services__item {
+    padding: 8px;
+    width: 100%;
+  }
   .services__item-title {
     font-size: 1rem;
-  }
-  .features-carousel .services__item {
-    padding: 10px;
   }
 }
 
@@ -1619,14 +1621,16 @@ body.dark-theme {
     max-width: 100%;
   }
   .services__item-title {
-    font-size: 1.4rem;
+    font-size: 1rem;
   }
   .features-carousel .services__item {
-    padding: 25px;
+    padding: 17px;
+    width: 100%;
   }
   .services__accordion-arrow {
     font-size: 11px;
   }
+}
 
 /* For medium devices */
 @media screen and (min-width: 576px) {
@@ -1634,32 +1638,25 @@ body.dark-theme {
     padding-top: 60px;
     padding-bottom: 60px;
   }
-
   .nav__menu {
     width: 342px;
   }
-
   .home__search {
     width: 412px;
   }
-
   .contact__card {
     grid-template-columns: repeat(2, 192px);
     justify-content: center;
   }
-
   .footer__content {
     grid-template-columns: repeat(3, max-content);
   }
-
   .logos__orbe {
     height: 324px;
   }
-
   .counter-item .counter {
     font-size: 25px;
   }
-
   .counter-item .counter__description {
     font-size: 11px;
     line-height: 20px;
@@ -1679,6 +1676,10 @@ body.dark-theme {
   }
   .services__accordion-title {
     font-size: var(--normal-font-size);
+  }
+  .features-carousel .services__item {
+    width: 100%;
+    padding: 20px;
   }
 }
 
@@ -1738,7 +1739,9 @@ body.dark-theme {
     font-size: 2rem;
   }
   .features-carousel .services__item {
+    width: 70%;
     padding: 25px;
+    margin: 10px;
   }
   
 }
@@ -1967,6 +1970,11 @@ body.dark-theme {
   }
   .services__accordion-arrow {
     font-size: 17px;
+  }
+  .features-carousel .services__item {
+    width: 60%;
+    padding: 30px;
+    margin: 20px;
   }
 }
 
