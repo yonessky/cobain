@@ -15,6 +15,7 @@
   --title-color: hsl(228, 57%, 28%);
   --text-color: hsl(228, 15%, 50%);
   --text-color-light: hsl(228, 12%, 75%);
+  --text-color-lighten: hsla(220, 8%, 92%, 1);
   --border-color: hsl(228, 99%, 98%);
   --body-color: hsl(244, 100%, 99%);
   --container-color: #fff;
@@ -190,6 +191,10 @@ body.dark-theme {
 
 .dark-theme .subscribe__description {
   color: var(--text-color);
+}
+
+.dark-theme .filters__content {
+  background-color: var(--container-color);
 }
 
 .dark-theme::-webkit-scrollbar {
@@ -1122,31 +1127,47 @@ body.dark-theme {
 
 /*====================== FILTERS TABS =====================*/
 .filters__content {
-  margin: 2rem 0 2.5rem;
-  background-color: var(--text-color-light);
+  margin: 2rem 1rem 2.5rem;
+  /* background-color: var(--text-color-lighten); */
   padding: .375;
   border-radius: .75rem;
   display: flex;
   justify-content: space-between;
-  column-gap: .5rem;
+  column-gap: 0;
 }
 
 .filters__button {
   width: 100%;
   border: none;
   outline: none;
+  margin: .35rem;
   padding: 1rem;
   color: var(--title-color);
   font-size: var(--small-font-size);
   font-family: var(--body-font);
   font-weight: 500;
+  border: 1px solid #65c0e5;
   border-radius: .75rem;
   cursor: pointer;
-  background-color: transparent;
+  background-color: var(--text-color-lighten);
   transition: .3s;
 }
 
 .filters__button:hover {
+  background-color: var(--body-color);
+}
+
+/* Hide and show projects & skills */
+.filters [data-content] {
+  display: none;
+}
+
+.filters__active[data-content] {
+  display: grid;
+}
+
+/* Activate button filter */
+.filter-tab-active {
   background-color: var(--body-color);
 }
 
@@ -2585,6 +2606,16 @@ body.dark-theme {
     width: 100%;
     padding: 20px;
   }
+
+  .projects__content {
+    grid-template-columns: 332px;
+    justify-content: center;
+  }
+
+  .filters__content {
+    width: 332px;
+    margin: 3rem auto;
+  }
 }
 
 @media screen and (min-width : 767px) {
@@ -2642,6 +2673,16 @@ body.dark-theme {
   .proyek__item {
     flex: 0 0 100%;
     max-width: 100%;
+  }
+
+  .projects__content,
+  .skills__content {
+    grid-template-columns: repeat(2, 332px);
+  }
+
+  .skills__content {
+    justify-content: center;
+    column-gap: 3rem;
   }
   
 }
@@ -2887,6 +2928,9 @@ body.dark-theme {
   .proyek__item {
     flex: 0 0 100%;
     max-width: 100%;
+  }
+  .projects__content {
+    gap: 2rem 3rem;
   }
 }
 
