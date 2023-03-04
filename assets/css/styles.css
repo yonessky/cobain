@@ -197,6 +197,14 @@ body.dark-theme {
   background-color: var(--container-color);
 }
 
+/* .dark-theme .filter-tab-active {
+  background-color: hsl(0, 0%, 0%);
+} */
+
+/* .dark-theme .filters__button {
+  background-color: hsla(228, 4%, 25%);
+} */
+
 .dark-theme::-webkit-scrollbar {
   background-color: hsla(228, 4%, 15%);
 }
@@ -1138,7 +1146,6 @@ body.dark-theme {
 
 .filters__button {
   width: 100%;
-  border: none;
   outline: none;
   margin: .35rem;
   padding: 1rem;
@@ -1156,6 +1163,7 @@ body.dark-theme {
 .filters__button:hover {
   background-color: var(--body-color);
 }
+
 
 /* Hide and show projects & skills */
 .filters [data-content] {
