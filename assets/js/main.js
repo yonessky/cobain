@@ -8,6 +8,60 @@ const scrollHeader = () => {
 };
 window.addEventListener("scroll", scrollHeader);
 
+/*======================= EMAIL JS ===================*/
+const contactForm = document.getElementById("contact-form"),
+  contactName = document.getElementById("contact-name"),
+  contactEmail = document.getElementById("contact-email"),
+  contactProject = document.getElementById("contact-project"),
+  contactMessage = document.getElementById("contact-message");
+
+const sendEmail = (e) => {
+  e.preventDefault();
+
+  // Check if the field has a value
+  if (
+    contactName.value === "" ||
+    contactEmail.value === "" ||
+    contactProject.value === ""
+  ) {
+    // Add and remove color
+    contactMessage.classList.remove("color-blue");
+    contactMessage.classList.add("color-red");
+
+    // Show message
+    contactMessage.textContent = "Write all the input fields 💬";
+  } else {
+    // serviceID - templateID - #form - publicKey
+    emailjs
+      .sendForm(
+        "service_8ku0ajp",
+        "template_d9hw035",
+        "#contact-form",
+        "EfUMcv3zkqiLtnKPS"
+      )
+      .then(
+        () => {
+          // Show message and add color
+          contactMessage.classList.add("color-blue");
+          contactMessage.textContent = "Message sent ✅";
+
+          // Remove message after five seconds
+          setTimeout(() => {
+            contactMessage.textContent = "";
+          }, 5000);
+        },
+        (error) => {
+          alert("OOPS! SOMETHING HAS FAILED...", error);
+        }
+      );
+    // To clear the input field
+    contactName.value = "";
+    contactEmail.value = "";
+    contactProject.value = "";
+  }
+};
+contactForm.addEventListener("submit", sendEmail);
+
 /*=============== SWIPER POPULAR ===============*/
 var swiperPopular = new Swiper(".popular__container", {
   spaceBetweem: 32,
@@ -37,10 +91,14 @@ var swiperPopular = new Swiper(".services__container", {
 });
 
 /*=============== VALUE ACCORDION ===============*/
-const accordionItems = document.querySelectorAll(".value__accordion-item, .services__accordion-item");
+const accordionItems = document.querySelectorAll(
+  ".value__accordion-item, .services__accordion-item"
+);
 
 accordionItems.forEach((item) => {
-  const accordionHeader = item.querySelector(".value__accordion-header, .services__accordion-header");
+  const accordionHeader = item.querySelector(
+    ".value__accordion-header, .services__accordion-header"
+  );
 
   accordionHeader.addEventListener("click", () => {
     const openItem = document.querySelector(".accordion-open");
@@ -64,7 +122,6 @@ const toggleItem = (item) => {
     item.classList.add("accordion-open");
   }
 };
-
 
 /*=============== SCROLL SECTIONS ACTIVE LINK ===============*/
 const sections = document.querySelectorAll("section[id]");
@@ -191,7 +248,6 @@ $(".counter").counterUp({
   time: 4000,
 });
 
-
 /*==========   Slick Carousel ==========*/
 $(".slick-carousel").slick();
 
@@ -226,7 +282,6 @@ $("#slick-filter-buttons .nav__link").on("click", function (e) {
   $("#filter-carousel").slick("slickGoTo", 0);
 });
 
-
 /*==========   Set Background-img to section   ==========*/
 $(".bg-img").each(function () {
   var imgSrc = $(this).children("img").attr("src");
@@ -245,21 +300,21 @@ $(".bg-img").each(function () {
 });
 
 /*=============== FILTERS TABS ===============*/
-const tabs = document.querySelectorAll('[data-target]'),
-      tabContents = document.querySelectorAll('[data-content]')
+const tabs = document.querySelectorAll("[data-target]"),
+  tabContents = document.querySelectorAll("[data-content]");
 
-tabs.forEach(tab =>{
-    tab.addEventListener('click', () =>{
-        const target = document.querySelector(tab.dataset.target)
+tabs.forEach((tab) => {
+  tab.addEventListener("click", () => {
+    const target = document.querySelector(tab.dataset.target);
 
-        tabContents.forEach(tc =>{
-            tc.classList.remove('filters__active')
-        })
-        target.classList.add('filters__active')
+    tabContents.forEach((tc) => {
+      tc.classList.remove("filters__active");
+    });
+    target.classList.add("filters__active");
 
-        tabs.forEach(t =>{
-            t.classList.remove('filter-tab-active')
-        })
-        tab.classList.add('filter-tab-active')
-    })
-})
+    tabs.forEach((t) => {
+      t.classList.remove("filter-tab-active");
+    });
+    tab.classList.add("filter-tab-active");
+  });
+});
