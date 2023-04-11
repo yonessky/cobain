@@ -2908,6 +2908,9 @@ body.dark-theme {
   .nav__logo img {
     width: 60px;
   }
+  .nav__logo span {
+    display: none;
+  }
   .active-link {
     background: none;
     box-shadow: none;
@@ -3147,5 +3150,3 @@ body.dark-theme {
     zoom: 2;
   }
 }
-
-test
