@@ -347,7 +347,7 @@ body.dark-theme {
 }
 
 .nav__logo img {
-  width: 27px;
+  width: 35px;
 }
 
 .nav__logo:hover {
@@ -357,16 +357,16 @@ body.dark-theme {
 @media screen and (max-width: 1023px) {
   .nav__menu {
     position: fixed;
-    bottom: 1.25rem;
+    bottom: 0;
     background-color: var(--container-color);
     box-shadow: 0 0 6px var(--shadow-bright);
     opacity: 90%;
-    width: 90%;
+    width: 100%;
     left: 0;
     right: 0;
     margin: 0 auto;
-    padding: 1.30rem 3rem;
-    border-radius: 2rem;
+    padding: 1.3rem 3rem;
+    border-radius: 2rem 2rem 0 0;
     transition: .4s;
   }
 
@@ -553,7 +553,7 @@ body.dark-theme {
       hsl(228, 66%, 53%),
       hsl(228, 66%, 47%));
   color: #fff;
-  padding: 14px 28px;
+  padding: 14px 20px;
   border-radius: .5rem;
   font-size: var(--normal-font-size);
   font-weight: var(--font-medium);
@@ -742,6 +742,7 @@ body.dark-theme {
   align-items: center;
   flex: 0 0 100%;
   max-width: 100%;
+  margin-top: 1.5rem;
 }
 
 .cta__banner {
@@ -819,8 +820,8 @@ body.dark-theme {
 
 /*=============== SERVICES ===============*/
 .services {
-  position: relative;
-  margin-top: 4rem;
+  position: absolute;
+  
   /* outline: 1px solid limegreen; */
 }
 
@@ -1299,17 +1300,21 @@ body.dark-theme {
   right: calc(50% - 3rem);
 }
 
-/*====================== FILTERS TABS =====================*/
+/* FILTER TAB */
+
 .filters__content {
   margin: 2rem 1rem 2.5rem;
-  /* background-color: var(--text-color-lighten); */
+  background: linear-gradient(180deg,
+                var(--first-color) 0%,
+                var(--first-color-alt) 100%);
   padding: .375;
   border-radius: .75rem;
-  justify-content: space-between;
+  /* justify-content: space-between; */
   column-gap: 0;
+  /* flex-wrap: wrap; */
   display: flex;
-  align-items: center;
-  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 100%;
   
 }
 
@@ -2898,6 +2903,10 @@ body.dark-theme {
   }
   .nav__button {
     display: inline-block;
+    padding: 14px 14px;
+  }
+  .nav__logo img {
+    width: 60px;
   }
   .active-link {
     background: none;
@@ -3109,6 +3118,10 @@ body.dark-theme {
   .projects__content {
     gap: 2rem 3rem;
   }
+  .services {
+    margin-top: 4rem;
+  }
+  
 }
 
 @media screen and (min-width: 1040px) {
