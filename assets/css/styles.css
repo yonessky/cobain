@@ -1,5 +1,7 @@
 /*=============== GOOGLE FONTS ===============*/
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=Alegreya+Sans:wght@800&family=Poppins:wght@400;500;600&display=swap');
+
 
 /*=============== VARIABLES CSS ===============*/
 :root {
@@ -24,6 +26,7 @@
   /*========== Font and typography ==========*/
   /*.5rem = 8px | 1rem = 16px ...*/
   --body-font: 'Poppins', sans-serif;
+  --title-font: 'Alegreya Sans', sans-serif;
   --biggest-font-size: 2.25rem;
   --h1-font-size: 1.5rem;
   --h2-font-size: 1.25rem;
@@ -350,6 +353,10 @@ body.dark-theme {
   width: 35px;
 }
 
+.nav__logo span{
+  font-family: var(--title-font);
+}
+
 .nav__logo:hover {
   color: var(--first-color);
 }
@@ -441,6 +448,7 @@ body.dark-theme {
   font-size: var(--biggest-font-size);
   line-height: 120%;
   margin-bottom: 1.25rem;
+  font-family: var(--title-font);
 }
 
 .home__description {
@@ -503,10 +511,11 @@ body.dark-theme {
 .home__orbe {
   width: 265px;
   height: 284px;
-  background: linear-gradient(180deg,
+  /* background: linear-gradient(180deg,
       hsl(190, 100%, 50%) 53%,
-      hsl(0, 0%, 100%) 100%);
-  border-radius: 135px 135px 0 0;
+      hsl(0, 0%, 100%) 100%); */
+  background-color: transparent;
+  /* border-radius: 135px 135px 0 0; */
 }
 
 .home__img {
@@ -1015,7 +1024,8 @@ body.dark-theme {
 
 .services__accordion-arrow {
   display: inline-flex;
-  background-color: var(--first-color-lighten);
+  background-color: var(--container-color);
+  color: var(--title-color);
   padding: .25rem;
   color: var(--first-color);
   border-radius: 2px;
@@ -2732,7 +2742,7 @@ body.dark-theme {
     width: 100%;
   }
   .services__accordion-arrow {
-    font-size: 11px;
+    font-size: 13px;
   }
 }
 
