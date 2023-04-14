@@ -271,16 +271,6 @@ $(".slider-nav").slick({
   centerPadding: "15px",
 });
 
-/*----------  slick Carousel with Filter  ----------*/
-$("#slick-filter-buttons .nav__link").on("click", function (e) {
-  e.preventDefault();
-  $(this).addClass("active").siblings().removeClass("active");
-  var key = "." + $(this).data("value");
-
-  $("#filter-carousel").slick("slickUnfilter");
-  $("#filter-carousel").slick("slickFilter", key).slick("refresh");
-  $("#filter-carousel").slick("slickGoTo", 0);
-});
 
 /*==========   Set Background-img to section   ==========*/
 $(".bg-img").each(function () {
