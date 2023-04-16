@@ -140,6 +140,7 @@ body.dark-theme {
   --border-color: hsl(228, 16%, 14%);
   --body-color: hsl(228, 12%, 8%);
   --container-color: hsl(228, 16%, 12%);
+  --text-color-lighten: rgb(59, 62, 66);
 }
 
 /*========== 
@@ -204,15 +205,15 @@ body.dark-theme {
 }
 
 .dark-theme .filters__content {
-  background-color: rgb(0, 0, 0);
+  background-color: var(--body-color);
 }
 
-.dark-theme .filter-tab-active {
-  background-color: rgb(250, 250, 250);
+.dark-theme .filters .filter-tab-active {
+  background-color: var(--text-color-lighten);
 }
 
 .dark-theme .filters__button {
-  background-color: rgb(0, 0, 0);
+  background-color: var(--body-color);
 }
 
 .dark-theme::-webkit-scrollbar {
