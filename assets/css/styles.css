@@ -1427,10 +1427,6 @@ body.dark-theme {
   padding: .5rem;
 }
 
-.projects__button:hover .projects__modal {
-  bottom: 0;
-}
-
 
 /*====================== PROYEK =====================*/
 .proyek__title span {
@@ -3159,6 +3155,9 @@ body.dark-theme {
   }
   .services {
     margin-top: 4rem;
+  }
+  .projects__modal {
+    padding: 1.5rem;
   }
   
 }
