@@ -308,3 +308,41 @@ tabs.forEach((tab) => {
     tab.classList.add("filter-tab-active");
   });
 });
+/** Load More **/
+
+// function loadMore(loadMoreBtn, loadedItem) {
+//   $(loadMoreBtn).on('click', function (e) {
+//       e.preventDefault();
+//       $(this).fadeOut();
+//       $(loadedItem).fadeIn();
+//   })
+// }
+
+// loadMore('.loadMore', '.project-hidden > .project__card');
+
+// let loadMoreBtn = document.querySelector('#load-more');
+// let currentItem = 3;
+
+// loadMoreBtn.onclick = () =>{
+//    let boxes = [...document.querySelectorAll('.container .box-container .box')];
+//    for (var i = currentItem; i < currentItem + 3; i++){
+//       boxes[i].style.display = 'inline-block';
+//    }
+//    currentItem += 3;
+
+//    if(currentItem >= boxes.length){
+//       loadMoreBtn.style.display = 'none';
+//    }
+// }
+
+// $(document).ready(function(){
+//   $(".content").slice(0, 4).show();
+//   $("#loadMore").on("click", function(e){
+//     e.preventDefault();
+//     $(".content:hidden").slice(0, 4).slideDown();
+//     if($(".content:hidden").length == 0) {
+//       $("#loadMore").text("No Content").addClass("noContent");
+//     }
+//   });
+  
+// })
