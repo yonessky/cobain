@@ -310,15 +310,15 @@ tabs.forEach((tab) => {
 });
 /** Load More **/
 
-// function loadMore(loadMoreBtn, loadedItem) {
-//   $(loadMoreBtn).on('click', function (e) {
-//       e.preventDefault();
-//       $(this).fadeOut();
-//       $(loadedItem).fadeIn();
-//   })
-// }
+function loadMore(loadMoreBtn, loadedItem) {
+  $(loadMoreBtn).on('click', function (e) {
+      e.preventDefault();
+      $(this).fadeOut();
+      $(loadedItem).fadeIn();
+  })
+}
 
-// loadMore('.loadMore', '.project-hidden > .project__card');
+loadMore('.loadMoreproject', '.project-hidden > .project__card');
 
 // let loadMoreBtn = document.querySelector('#load-more');
 // let currentItem = 3;
@@ -346,3 +346,59 @@ tabs.forEach((tab) => {
 //   });
   
 // })
+
+/*=============== PARTICLES ===============*/
+var particles = Particles.init({
+	selector: '.background',
+  color: '#ffffff'
+});
+
+Particles.
+init
+({
+  
+// normal options
+//   selector: 
+// '.background'
+// ,
+//   maxParticles: 
+// 450
+// ,
+  
+// options for breakpoints
+  responsive: [
+    {
+      breakpoint: 
+768
+,
+      options: {
+        maxParticles: 
+100
+,
+        connectParticles: 
+false
+      }
+    }, {
+      breakpoint: 
+425
+,
+      options: {
+        maxParticles: 
+50
+,
+        connectParticles: 
+true
+      }
+    }, {
+      breakpoint: 
+320
+,
+      options: {
+        maxParticles: 
+0
+ 
+// disables particles.js
+      }
+    }
+  ]
+});

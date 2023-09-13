@@ -1013,6 +1013,21 @@ body.dark-theme {
   background-size: auto;
 }
 
+/* .background {
+  position: absolute;
+  display: block;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  z-index: 0;
+  background-position: center;
+  background-attachment: scroll;
+  background-repeat: no-repeat;
+  background-size: cover;
+} */
+
 .services__accordion-item {
   /* outline: 1px solid black; */
   padding: 5px 10px 10px;
@@ -1388,7 +1403,7 @@ body.dark-theme {
 .filter-tab-active {
   background-color: var(--text-color-lighten);
 }
-.loadMore {
+.loadMoreproject {
   width: 200px;
   color: #fff;
   display: block;
@@ -1401,7 +1416,7 @@ body.dark-theme {
   cursor: pointer;
   transition: .3s;
 }
-.loadMore:hover {
+.loadMoreproject:hover {
   color: blue;
   background-color: #fff;
   border: 1px solid blue;
@@ -1412,7 +1427,7 @@ body.dark-theme {
   background-color: transparent !important;
   pointer-events: none;
 }
-.portofolio-hidden > .project__card {
+.project-hidden > .project__card {
   display: none;
 }
 
