@@ -297,6 +297,11 @@ function loadMore(loadMoreBtn, loadedItem) {
 
 loadMore('.loadMoreproject', '.project-hidden > .project__card');
 loadMore('.loadMoremall', '.project-hiddenmall > .project__card');
+loadMore('.loadMorehos', '.project-hiddenhos > .project__card');
+loadMore('.loadMoreedu', '.project-hiddenedu > .project__card');
+loadMore('.loadMoreoffc', '.project-hiddenoffc > .project__card');
+loadMore('.loadMoresports', '.project-hiddensports > .project__card');
+loadMore('.loadMoreother', '.project-hiddenother > .project__card');
 
 // let loadMoreBtn = document.querySelector('#load-more');
 // let currentItem = 3;
