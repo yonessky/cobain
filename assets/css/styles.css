@@ -1418,11 +1418,7 @@ body.dark-theme {
   background-color: #fff;
   border: 1px solid blue;
   text-decoration: none;
-}
-.noContent {
-  color: #000 !important;
-  background-color: transparent !important;
-  pointer-events: none;
+  box-shadow: 0 12px 16px hsla(228, 66%, 45%, .1);
 }
 .project-hidden > .project__item,
 .project-hiddenmall > .project__item ,
@@ -1609,20 +1605,17 @@ body.dark-theme {
 .contact__container {
   row-gap: 2rem;
 }
-
 .contact__images {
   position: relative;
   display: flex;
   justify-content: center;
 }
-
 .contact__orbe {
   width: 266px;
   height: 316px;
   background-color: hsl(228, 24%, 97%);
   border-radius: 135px 135px 16px 16px;
 }
-
 .contact__img {
   position: absolute;
   width: 250px;
@@ -1633,18 +1626,15 @@ body.dark-theme {
   margin: auto;
   box-shadow: 0 16px 32px hsla(228, 66%, 25%, .25);
 }
-
 .contact__description {
   font-size: var(--small-font-size);
   margin-bottom: 2.5rem;
 }
-
 .contact__card {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 1.25rem .75rem;
 }
-
 .contact__card-box {
   background-color: var(--body-color);
   border: 2px solid var(--border-color);
@@ -1652,14 +1642,12 @@ body.dark-theme {
   border-radius: .5rem;
   transition: .3s;
 }
-
 .contact__card-info {
   display: flex;
   align-items: flex-start;
   column-gap: .75rem;
   margin-bottom: 1.25rem;
 }
-
 .contact__card i {
   padding: 6px;
   background-color: var(--first-color-lighten);
@@ -1667,15 +1655,12 @@ body.dark-theme {
   font-size: 1.25rem;
   color: var(--first-color);
 }
-
 .contact__card-title {
   font-size: var(--normal-font-size);
 }
-
 .contact__card-description {
   font-size: var(--smaller-font-size);
 }
-
 .contact__card-button {
   font-size: var(--small-font-size);
   padding: 14px 0;
@@ -1686,12 +1671,10 @@ body.dark-theme {
   font-weight: var(--font-semi-bold);
   box-shadow: none;
 }
-
 .contact__card-button:hover {
   background-color: var(--first-color);
   color: #fff;
 }
-
 .contact__card-box:hover {
   box-shadow: 0 8px 24px hsla(228, 66%, 45%, .1);
 }
@@ -1700,7 +1683,6 @@ body.dark-theme {
 .subscribe {
   padding: 2.5rem 0;
 }
-
 .subscribe__container {
   background-color: var(--first-color);
   padding: 3rem 2rem;
@@ -1708,35 +1690,29 @@ body.dark-theme {
   border: 6px solid var(--first-color-light);
   text-align: center;
 }
-
 .subscribe__title {
   font-size: var(--h2-font-size);
   color: #fff;
   margin-bottom: 1rem;
 }
-
 .subscribe__description {
   color: hsl(228, 90%, 92%);
   font-size: var(--small-font-size);
   margin-bottom: 2rem;
 }
-
 .subscribe__button {
   border: 2px solid #fff;
   background: var(--first-color-light);
   font-size: var(--small-font-size);
 }
-
 .subscribe__button:hover {
   background-color: var(--first-color);
 }
-
 
 /*=============== FOOTER ===============*/
 .footer__container {
   row-gap: 2.5rem;
 }
-
 .footer__logo {
   color: var(--first-color);
   font-size: var(--h3-font-size);
@@ -1746,65 +1722,52 @@ body.dark-theme {
   column-gap: .25rem;
   margin-bottom: .75rem;
 }
-
 .footer__logo i {
   font-size: 1.25rem;
 }
-
 .footer__description,
 .footer__link {
   font-size: var(--small-font-size);
   font-weight: var(--font-medium);
 }
-
 .footer__content,
 .footer__links {
   display: grid;
 }
-
 .footer__content {
   grid-template-columns: repeat(2, max-content);
   gap: 2.5rem 4rem;
 }
-
 .footer__title {
   font-size: var(--h3-font-size);
   margin-bottom: 1rem;
 }
-
 .footer__links {
   row-gap: .5rem;
 }
-
 .footer__link {
   color: var(--text-color);
   transition: .3s;
 }
-
 .footer__link:hover {
   color: var(--title-color);
 }
-
 .footer__social {
   display: flex;
   column-gap: 1rem;
 }
-
 .footer__social-link {
   font-size: 1.25rem;
   color: var(--text-color);
   transition: .3s;
 }
-
 .footer__social-link:hover {
   color: var(--title-color);
 }
-
 .footer__info,
 .footer__privacy {
   display: flex;
 }
-
 .footer__info {
   padding-bottom: 6rem;
   margin-top: 5.5rem;
@@ -1812,19 +1775,16 @@ body.dark-theme {
   text-align: center;
   row-gap: 1.5rem;
 }
-
 .footer__copy,
 .footer__privacy a {
   font-size: var(--smaller-font-size);
   font-weight: var(--font-medium);
   color: var(--text-color);
 }
-
 .footer__privacy {
   justify-content: center;
   column-gap: 1.25rem;
 }
-
 
 /*=============== SCROLL BAR ===============*/
 ::-webkit-scrollbar {
