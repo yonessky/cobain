@@ -104,10 +104,10 @@ body {
 }
 
 .card-avatar {
-  width: 100px;
-  height: 100px;
+  width: 200px;
+  height: 200px;
   box-shadow: 0 8px 8px rgba(0, 0, 0, 0.2);
-  border-radius: 50%;
+  border-radius: 10%;
   -o-object-position: center;
      object-position: center;
   -o-object-fit: cover;

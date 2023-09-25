@@ -193,54 +193,24 @@ themeButton.addEventListener("click", () => {
 });
 
 // /*=============== SCROLL REVEAL ANIMATION ===============*/
-const sr = ScrollReveal({
-  origin: "top",
-  distance: "60px",
-  duration: 2500,
-  delay: "400",
-  // reset: true
-});
-
-sr.reveal(
-  `.home__title, .popular__container, .subscribe__container, .footer__container`
-);
-sr.reveal(`.home__description, .footer__info`, { delay: 500 });
-sr.reveal(`.home__search`, { delay: 600 });
-sr.reveal(`.home__value`, { delay: 700 });
-sr.reveal(`.home__images`, { delay: 800, origin: "bottom" });
-sr.reveal(`.logos__img`, { interval: 100 });
-sr.reveal(`.value__images, .contact__content`, { origin: "left" });
-sr.reveal(`.value__content, .contact__images`, { origin: "right" });
-
-/* ---------------------------------------------- /*
-         * Youtube video background
-/* ---------------------------------------------- */
-
-// $(function () {
-//   $(".video-player").mb_YTPlayer();
+// const sr = ScrollReveal({
+//   origin: "top",
+//   distance: "60px",
+//   duration: 2500,
+//   delay: "400",
+//   // reset: true
 // });
 
-// $("#video-play").click(function (event) {
-//   event.preventDefault();
-//   if ($(this).hasClass("fa-play")) {
-//     $(".video-player").playYTP();
-//   } else {
-//     $(".video-player").pauseYTP();
-//   }
-//   $(this).toggleClass("fa-play fa-pause");
-//   return false;
-// });
-
-// $("#video-volume").click(function (event) {
-//   event.preventDefault();
-//   if ($(this).hasClass("fa-volume-off")) {
-//     $(".video-player").YTPUnmute();
-//   } else {
-//     $(".video-player").YTPMute();
-//   }
-//   $(this).toggleClass("fa-volume-off fa-volume-up");
-//   return false;
-// });
+// sr.reveal(
+//   `.home__title, .popular__container, .subscribe__container, .footer__container`
+// );
+// sr.reveal(`.home__description, .footer__info`, { delay: 500 });
+// sr.reveal(`.home__search`, { delay: 600 });
+// sr.reveal(`.home__value`, { delay: 700 });
+// sr.reveal(`.home__images`, { delay: 800, origin: "bottom" });
+// sr.reveal(`.logos__img`, { interval: 100 });
+// sr.reveal(`.value__images, .contact__content`, { origin: "left" });
+// sr.reveal(`.value__content, .contact__images`, { origin: "right" });
 
 /*==========   counterUp  ==========*/
 $(".counter").counterUp({
@@ -284,6 +254,28 @@ tabs.forEach((tab) => {
     });
     tab.classList.add("filter-tab-active");
   });
+});
+
+/** Filter bottom **/
+const buttons = document.querySelectorAll(".card-buttons button");
+// const sections = document.querySelectorAll(".card-section");
+const card = document.querySelector(".card");
+
+const handleButtonClick = e => {
+  const targetSection = e.target.getAttribute("data-section");
+  const section = document.querySelector(targetSection);
+  targetSection !== "#about" ?
+  card.classList.add("is-active") :
+  card.classList.remove("is-active");
+  card.setAttribute("data-state", targetSection);
+  sections.forEach(s => s.classList.remove("is-active"));
+  buttons.forEach(b => b.classList.remove("is-active"));
+  e.target.classList.add("is-active");
+  section.classList.add("is-active");
+};
+
+buttons.forEach(btn => {
+  btn.addEventListener("click", handleButtonClick);
 });
 
 /** Load More **/
