@@ -1433,13 +1433,18 @@ body.dark-theme {
   border: solid 1px rgb(241, 241, 241);
   box-shadow: 0 12px 16px hsla(228, 66%, 45%, .1);
 }
+.card[data-state="#cardabout"] {
+  height: 100%;
+}
+.card[data-state="#cardabout"] .card-main {
+  padding-top: 0;
+}
 .card-avatar {
   border-radius: 1rem;
   margin-bottom: 1rem;
   /* width: 200px;
   height: 200px; */
   box-shadow: 0 8px 8px rgba(0, 0, 0, 0.2);
-  border-radius: 10%;
   -o-object-position: center;
      object-position: center;
   -o-object-fit: cover;
