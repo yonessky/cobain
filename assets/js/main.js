@@ -258,7 +258,7 @@ tabs.forEach((tab) => {
 
 /** Filter bottom **/
 const buttons = document.querySelectorAll(".card-buttons button");
-// const sections = document.querySelectorAll(".card-section");
+const cardSections = document.querySelectorAll(".card-section");
 const card = document.querySelector(".card");
 
 const handleButtonClick = e => {
@@ -268,7 +268,7 @@ const handleButtonClick = e => {
   card.classList.add("is-active") :
   card.classList.remove("is-active");
   card.setAttribute("data-state", targetSection);
-  sections.forEach(s => s.classList.remove("is-active"));
+  cardSections.forEach(s => s.classList.remove("is-active"));
   buttons.forEach(b => b.classList.remove("is-active"));
   e.target.classList.add("is-active");
   section.classList.add("is-active");
