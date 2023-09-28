@@ -63,18 +63,18 @@ const sendEmail = (e) => {
 contactForm.addEventListener("submit", sendEmail);
 
 /*=============== SWIPER POPULAR ===============*/
-var swiperPopular = new Swiper(".popular__container", {
-  spaceBetweem: 32,
-  grabCursor: true,
-  centeredSlides: true,
-  slidesPerView: "auto",
-  loop: true,
+// var swiperPopular = new Swiper(".popular__container", {
+//   spaceBetweem: 32,
+//   grabCursor: true,
+//   centeredSlides: true,
+//   slidesPerView: "auto",
+//   loop: true,
 
-  navigation: {
-    nextEl: ".swiper-button-next",
-    prevEl: ".swiper-button-prev",
-  },
-});
+//   navigation: {
+//     nextEl: ".swiper-button-next",
+//     prevEl: ".swiper-button-prev",
+//   },
+// });
 
 /*=============== SWIPER SERVICES ===============*/
 var swiperPopular = new Swiper(".services__container", {
@@ -87,6 +87,20 @@ var swiperPopular = new Swiper(".services__container", {
   navigation: {
     nextEl: ".swiper-button-next",
     prevEl: ".swiper-button-prev",
+  },
+});
+
+/*=============== SWIPER GALLERY ===============*/
+var swiperGallery = new Swiper(".project-gallery", {
+  spaceBetweem: 32,
+  grabCursor: true,
+  centeredSlides: true,
+  slidesPerView: "auto",
+  loop: true,
+
+  navigation: {
+    nextEl: ".swiper-gallery-next",
+    prevEl: ".swiper-gallery-prev",
   },
 });
 
