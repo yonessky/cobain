@@ -99,8 +99,8 @@ var swiperGallery = new Swiper(".project-gallery", {
   loop: true,
 
   navigation: {
-    nextEl: ".swiper-gallery-next",
-    prevEl: ".swiper-gallery-prev",
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
   },
 });
 
@@ -302,13 +302,13 @@ function loadMore(loadMoreBtn, loadedItem) {
   })
 }
 
-loadMore('.loadMoreproject', '.project-hidden > .project__item');
-loadMore('.loadMoremall', '.project-hiddenmall > .project__item');
-loadMore('.loadMorehos', '.project-hiddenhos > .project__item');
-loadMore('.loadMoreedu', '.project-hiddenedu > .project__item');
-loadMore('.loadMoreoffc', '.project-hiddenoffc > .project__item');
-loadMore('.loadMoresports', '.project-hiddensports > .project__item');
-loadMore('.loadMoreother', '.project-hiddenother > .project__item');
+loadMore('.loadMoreproject', '.project-hidden > .card');
+loadMore('.loadMoremall', '.project-hiddenmall > .card');
+loadMore('.loadMorehos', '.project-hiddenhos > .card');
+loadMore('.loadMoreedu', '.project-hiddenedu > .card');
+loadMore('.loadMoreoffc', '.project-hiddenoffc > .card');
+loadMore('.loadMoresports', '.project-hiddensports > .card');
+loadMore('.loadMoreother', '.project-hiddenother > .card');
 
 // let loadMoreBtn = document.querySelector('#load-more');
 // let currentItem = 3;
