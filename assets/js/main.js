@@ -102,6 +102,9 @@ var swiperGallery = new Swiper(".project-gallery", {
     nextEl: ".swiper-button-next",
     prevEl: ".swiper-button-prev",
   },
+  pagination: {
+    el: '.swiper-pagination',
+  },
 });
 
 /*=============== VALUE ACCORDION ===============*/
@@ -303,12 +306,19 @@ function loadMore(loadMoreBtn, loadedItem) {
 }
 
 loadMore('.loadMoreproject', '.project-hidden > .card');
+loadMore('.loadMoreproject', '.project-hidden1 > .card');
 loadMore('.loadMoremall', '.project-hiddenmall > .card');
+loadMore('.loadMoremall', '.project-hiddenmall1 > .card');
 loadMore('.loadMorehos', '.project-hiddenhos > .card');
+loadMore('.loadMorehos', '.project-hiddenhos1 > .card');
 loadMore('.loadMoreedu', '.project-hiddenedu > .card');
+loadMore('.loadMoreedu', '.project-hiddenedu1 > .card');
 loadMore('.loadMoreoffc', '.project-hiddenoffc > .card');
+loadMore('.loadMoreoffc', '.project-hiddenoffc1 > .card');
 loadMore('.loadMoresports', '.project-hiddensports > .card');
+loadMore('.loadMoresports', '.project-hiddensports1 > .card');
 loadMore('.loadMoreother', '.project-hiddenother > .card');
+loadMore('.loadMoreother', '.project-hiddenother1 > .card');
 
 // let loadMoreBtn = document.querySelector('#load-more');
 // let currentItem = 3;
