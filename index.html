@@ -14,7 +14,7 @@
 
 
   <!--=============== SWIPER CSS ===============-->
-  <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css">
 
   <!--=============== YTPlayer CSS ===============-->
   <!-- <link rel="stylesheet" href="assets/css/jquery.mb.YTPlayer.min.css"> -->
@@ -26,12 +26,13 @@
 </head>
 
 <!-- <body oncontextmenu="return false"> -->
+
 <body>
-    <!--==================== HEADER ====================-->
+  <!--==================== HEADER ====================-->
   <header class="header" id="header">
     <nav class="nav container">
       <a href="http://www.dwitunggalelectric.com/download/cp.pdf" class="nav__logo">
-        <img src="assets/img/logos/logo.png" alt="logo image">
+        <img src="assets/img/logos/logo.webp" alt="logo image">
         <span>
           DWI TUNGGAL ENERGI
         </span>
@@ -139,7 +140,7 @@
           <div class="home__orbe"></div>
 
           <div class="home__img">
-            <img src="assets/img/home.png" alt="">
+            <img src="assets/img/home.webp" alt="home">
           </div>
         </div>
       </div>
@@ -233,7 +234,7 @@
 
           <div class="aboutcta__container">
             <div class="about__image">
-              <img src="assets/img/about/11.png" alt="about" class="">
+              <img src="assets/img/about/all.webp" alt="about" />
 
             </div>
           </div>
@@ -262,11 +263,12 @@
 
         <div class="services__container swiper">
           <div class="swiper-wrapper">
-
             <div class="services__item swiper-slide">
               <h4 class="services__item-title">MEKANIKAL</h4>
-              <img src="assets/img/layanan/me.jpg" alt="" class="services__item-img">
-              <p class="services__item-desc justify"><b>ELEKTRIKAL</b> sangat berkaitan dengan <b>MEKANIKAL</b>, oleh sebab itu Tim Elektrikal dan Tim Mekanikal DTE bekerja sama memiliki catatan dan Pengalaman Terbaik sebagai dasar kami dalam melakukan Instalasi Elektrik di setiap proyek.</p>
+              <img src="assets/img/layanan/me.webp" alt="" class="services__item-img">
+              <p class="services__item-desc justify"><b>ELEKTRIKAL</b> sangat berkaitan dengan <b>MEKANIKAL</b>, oleh
+                sebab itu Tim Elektrikal dan Tim Mekanikal DTE bekerja sama memiliki catatan dan Pengalaman Terbaik
+                sebagai dasar kami dalam melakukan Instalasi Elektrik di setiap proyek.</p>
 
               <div class="services__accordion-item">
                 <header class="services__accordion-header">
@@ -346,7 +348,7 @@
 
             <div class="services__item swiper-slide">
               <h4 class="services__item-title">ELEKTRIKAL</h4>
-              <img src="assets/img/layanan/elektronik.jpg" alt="" class="services__item-img">
+              <img src="assets/img/layanan/elektronik.webp" alt="" class="services__item-img">
               <p class="services__item-desc justify">Tim Instalasi Elektronik kami telah berpengalaman dan memenuhi
                 syarat untuk melakukan proses instalasi. Kami percaya bahwa tim kami dapat memberikan solusi terbaik
                 untuk klien kami.<br>
@@ -490,7 +492,7 @@
 
             <div class="services__item swiper-slide">
               <h4 class="services__item-title">AFTERSALES MEP</h4>
-              <img src="assets/img/layanan/plumbing.jpg" alt="" class="services__item-img">
+              <img src="assets/img/layanan/aftersales.webp" alt="" class="services__item-img">
               <p class="services__item-desc justify">Kami sebagai perusahaan Kontraktor ME di Semarang menyediakan jasa
                 Instalasi Plumbing sekaligus pekerjaan lainnya yang berhubungan dengan Mekanikal dan Elektrikal sehingga
                 bangunan Anda bisa memiliki fungsi dan fitur yang normal.
@@ -566,7 +568,7 @@
         <!-- <p class="subscribe__description">
           Download Company Profile
         </p> -->
-        <a href="http://www.dwitunggalelectric.com/download/cp.pdf" class="button subscribe__button">
+        <a href="http://www.dwitunggalelectric.com/download/cp.pdf" class="subscribe__button">
           Download
         </a>
       </div>
@@ -608,19 +610,54 @@
 
         <div class="filters__sections">
           <!--==================== PROJECTS ====================-->
-          <div class="projects__content grid filters__active d-flex" data-content id="ongoing">
-            <div class="card project__item swiper-slide" data-state="#cardabout">
-              <img src="assets/img/proyek/berjalan/FHUI.webp" loading="lazy" alt="Image Project" class="card-avatar">
-              <div class="card-main">
+          <div class="card-container filters__active" data-content id="ongoing">
+            <div class="card">
+              <div class="card-header swiper">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <img src="assets/img/proyek/berjalan/FHUI.webp" loading="lazy" alt="Image Project" class="card-avatar">
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="assets/img/proyek/berjalan/FHUI.webp" loading="lazy" alt="Image Project" class="card-avatar">
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="assets/img/proyek/berjalan/FHUI.webp" loading="lazy" alt="Image Project" class="card-avatar">
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="assets/img/proyek/berjalan/FHUI.webp" loading="lazy" alt="Image Project" class="card-avatar">
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="assets/img/proyek/berjalan/FHUI.webp" loading="lazy" alt="Image Project" class="card-avatar">
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="assets/img/proyek/berjalan/FHUI.webp" loading="lazy" alt="Image Project" class="card-avatar">
+                  </div>
+                </div>
+                <div class="swiper-pagination"></div>
+                <div class="swiper-button-next">
+                  <i class="ri-arrow-right-s-line"></i>
+                </div>
+                <div class="swiper-button-prev">
+                  <i class="ri-arrow-left-s-line"></i>
+                </div>
+                <h2 class="card-tahun">
+                  Tahun <span>2023</span>
+                </h2>
+                <h3 class="card-title">
+                  Gedung Interdisciplinary Legal Research Center Building Bridge FH-UI Depok
+                </h3>
+                <p class="card-description">
+                  Bekerja sama dengan <b>Universitas Indonesia</b><br>
+                  Lokasi : <b>Depok</b> <br>
+                  Pekerjaan Meliputi : <br>
+                  ▶ Mekanikal <br>
+                  ▶ Elektrikal <br>
+                  ▶ Plumbing <br>
+                </p>
+              </div>
+              <!-- <div class="card-main">
                 <div class="card-section is-active" id="cardabout">
-                  <div class="project__data">
-                    <h2 class="project__price">
-                      Th. <span>2023</span>
-                    </h2>
-                    <h3 class="project__title">
-                      Gedung Interdisciplinary Legal Research Center Building Bridge FH-UI Depok
-                    </h3>
-                    <p class="project__description">
+                    <p class="card-description">
                       Bekerja sama dengan <b>Universitas Indonesia</b><br>
                       Lokasi : <b>Depok</b> <br>
                       Pekerjaan Meliputi : <br>
@@ -628,36 +665,180 @@
                       ▶ Elektrikal <br>
                       ▶ Plumbing <br>
                     </p>
+                </div>
+                <div class="card-section project-gallery swiper" id="cardgallery">
+                  <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                      <img src="assets/img/proyek/berjalan/FHUI.webp" loading="lazy" alt="Image Project"
+                        class="card-gallery">
+
+                    </div>
+                    <div class="swiper-slide">
+                      <img src="assets/img/proyek/berjalan/saifulanwar.webp" loading="lazy" alt="Image Project"
+                        class="card-gallery">
+
+                    </div>
+                    <div class="swiper-slide">
+                      <img src="assets/img/proyek/edu/arsipunnes.webp" loading="lazy" alt="Image Project"
+                        class="card-gallery">
+                    </div>
+                    <div class="swiper-slide">
+                      <img src="assets/img/proyek/hospital/puskesmasjepon.webp" loading="lazy" alt="Image Project"
+                        class="card-gallery">
+                    </div>
+                    <div class="swiper-slide">
+                      <img src="assets/img/proyek/mall/peterongan.webp" loading="lazy" alt="Image Project"
+                        class="card-gallery">
+                    </div>
+                    <div class="swiper-slide">
+                      <img src="assets/img/proyek/ofc/bupatidemak.webp" loading="lazy" alt="Image Project"
+                        class="card-gallery">
+                    </div>
+                  </div>
+                  <div class="swiper-pagination"></div>
+                  <div class="swiper-button-next">
+                    <i class="ri-arrow-right-s-line"></i>
+                  </div>
+                  <div class="swiper-button-prev">
+                    <i class="ri-arrow-left-s-line"></i>
                   </div>
                 </div>
-                <div class="card-section" id="cardgallery">
-                  <div class="project-gallery swiper">
+              </div> -->
+              <!-- <div class="card-buttons">
+                <button data-section="#cardabout" class="is-active">About</button>
+                <button data-section="#cardgallery">Gallery</button>
+              </div> -->
+            </div>
+
+            <div class="project-hidden1">
+              <div class="card swiper-slide" data-state="#cardabout">
+                <div class="card-header">
+                  <img src="assets/img/proyek/berjalan/adamhouse.webp" loading="lazy" alt="Image Project"
+                    class="card-avatar">
+                  <h2 class="card-tahun">
+                    Tahun <span>2023</span>
+                  </h2>
+                  <h3 class="card-title">
+                    Pembangunan Rumah Kumudasmoro
+                  </h3>
+                </div>
+                <div class="card-main">
+                  <div class="card-section is-active" id="cardabout">
+                    <div class="card-about">
+                      <p class="card-description">
+                        Bekerja sama dengan <b>Mr. Adam</b><br>
+                        Lokasi : <b>Kumudasmoro</b> <br>
+                        Pekerjaan Meliputi : <br>
+                        ▶ Mekanikal <br>
+                        ▶ Elektrikal <br>
+                        ▶ Plumbing <br>
+                      </p>
+                    </div>
+                  </div>
+                  <div class="card-section project-gallery swiper" id="cardgallery">
                     <div class="swiper-wrapper">
                       <div class="swiper-slide">
-                        <img src="assets/img/proyek/berjalan/FHUI.webp" loading="lazy" alt="Image Project" class="card-gallery">
-                        
+                        <img src="assets/img/proyek/berjalan/FHUI.webp" loading="lazy" alt="Image Project"
+                          class="card-gallery">
+
                       </div>
                       <div class="swiper-slide">
-                        <img src="assets/img/proyek/berjalan/saifulanwar.webp" loading="lazy" alt="Image Project" class="card-gallery">
-                        
+                        <img src="assets/img/proyek/berjalan/saifulanwar.webp" loading="lazy" alt="Image Project"
+                          class="card-gallery">
+
                       </div>
                       <div class="swiper-slide">
-                        
+                        <img src="assets/img/proyek/edu/arsipunnes.webp" loading="lazy" alt="Image Project"
+                          class="card-gallery">
                       </div>
                       <div class="swiper-slide">
-                        
+                        <img src="assets/img/proyek/hospital/puskesmasjepon.webp" loading="lazy" alt="Image Project"
+                          class="card-gallery">
                       </div>
                       <div class="swiper-slide">
-                        
+                        <img src="assets/img/proyek/mall/peterongan.webp" loading="lazy" alt="Image Project"
+                          class="card-gallery">
                       </div>
                       <div class="swiper-slide">
-                        
+                        <img src="assets/img/proyek/ofc/bupatidemak.webp" loading="lazy" alt="Image Project"
+                          class="card-gallery">
                       </div>
                     </div>
-                    <div class="swiper-gallery-next">
+                    <div class="swiper-pagination"></div>
+                    <div class="swiper-button-next">
                       <i class="ri-arrow-right-s-line"></i>
                     </div>
-                    <div class="swiper-gallery-prev">
+                    <div class="swiper-button-prev">
+                      <i class="ri-arrow-left-s-line"></i>
+                    </div>
+
+                  </div>
+                </div>
+                <div class="card-buttons">
+                  <button data-section="#cardabout" class="is-active">About</button>
+                  <button data-section="#cardgallery">Gallery</button>
+                </div>
+              </div>
+            </div>
+            <div class="project-hidden">
+              <div class="card swiper-slide" data-state="#cardabout">
+                <div class="card-header">
+                  <img src="assets/img/proyek/berjalan/tanggarungtenggarong.webp" loading="lazy" alt="Image Project"
+                    class="card-avatar">
+                  <h2 class="card-tahun">
+                    Tahun <span>2023</span>
+                  </h2>
+                  <h3 class="card-title">
+                    Pasar Tangga Arung Tenggarong
+                  </h3>
+                </div>
+                <div class="card-main">
+                  <div class="card-section is-active" id="cardabout">
+                    <div class="card-about">
+                      <p class="card-description">
+                        Bekerja sama dengan <b>Pemerintah Kota Tenggarong</b><br>
+                        Lokasi : <b>Tenggarong, Kalimantan Timur</b> <br>
+                        Pekerjaan Meliputi : <br>
+                        ▶ Mekanikal <br>
+                        ▶ Elektrikal <br>
+                        ▶ Plumbing <br>
+                      </p>
+                    </div>
+                  </div>
+                  <div class="card-section project-gallery swiper" id="cardgallery">
+                    <div class="swiper-wrapper">
+                      <div class="swiper-slide">
+                        <img src="assets/img/proyek/berjalan/FHUI.webp" loading="lazy" alt="Image Project"
+                          class="card-gallery">
+
+                      </div>
+                      <div class="swiper-slide">
+                        <img src="assets/img/proyek/berjalan/saifulanwar.webp" loading="lazy" alt="Image Project"
+                          class="card-gallery">
+
+                      </div>
+                      <div class="swiper-slide">
+                        <img src="assets/img/proyek/edu/arsipunnes.webp" loading="lazy" alt="Image Project"
+                          class="card-gallery">
+                      </div>
+                      <div class="swiper-slide">
+                        <img src="assets/img/proyek/hospital/puskesmasjepon.webp" loading="lazy" alt="Image Project"
+                          class="card-gallery">
+                      </div>
+                      <div class="swiper-slide">
+                        <img src="assets/img/proyek/mall/peterongan.webp" loading="lazy" alt="Image Project"
+                          class="card-gallery">
+                      </div>
+                      <div class="swiper-slide">
+                        <img src="assets/img/proyek/ofc/bupatidemak.webp" loading="lazy" alt="Image Project"
+                          class="card-gallery">
+                      </div>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                    <div class="swiper-button-next">
+                      <i class="ri-arrow-right-s-line"></i>
+                    </div>
+                    <div class="swiper-button-prev">
                       <i class="ri-arrow-left-s-line"></i>
                     </div>
                   </div>
@@ -668,216 +849,576 @@
                 </div>
               </div>
             </div>
-            <div class="project-hidden1">
-              <article class="project__item swiper-slide">
-                <img src="assets/img/proyek/berjalan/adamhouse.webp" loading="lazy" alt="" class="project__img">
-                <div class="project__data">
-                  <h2 class="project__price">
-                    Th. <span>2023</span>
-                  </h2>
-                  <h3 class="project__title">
-                    Pembangunan Rumah Kumudasmoro
-                  </h3>
-                  <p class="project__description">
-                    Bekerja sama dengan <b>Mr. Adam</b><br>
-                    Lokasi : <b>Kumudasmoro</b> <br>
-                    Pekerjaan Meliputi : <br>
-                    ▶ Mekanikal <br>
-                    ▶ Elektrikal <br>
-                    ▶ Plumbing <br>
-                  </p>
-                </div>
-              </article>
-            </div>
             <div class="project-hidden">
-              <article class="project__item swiper-slide">
-                <img src="assets/img/proyek/berjalan/tanggarungtenggarong.webp" alt="" class="project__img">
-                <div class="project__data">
-                  <h2 class="project__price">
-                    Th. <span>2023</span>
+              <div class="card swiper-slide" data-state="#cardabout">
+                <div class="card-header">
+                  <img src="assets/img/proyek/berjalan/saifulanwar.webp" loading="lazy" alt="Image Project"
+                    class="card-avatar">
+                  <h2 class="card-tahun">
+                    Tahun <span>2023</span>
                   </h2>
-                  <h3 class="project__title">
-                    Pasar Tangga Arung Tenggarong
-                  </h3>
-                  <p class="project__description">
-                    Bekerja sama dengan <b>Pemerintah Kota Tenggarong</b><br>
-                    Lokasi : <b>Tenggarong, Kalimantan Timur</b> <br>
-                    Pekerjaan Meliputi : <br>
-                    ▶ Mekanikal <br>
-                    ▶ Elektrikal <br>
-                    ▶ Plumbing <br>
-                  </p>
-                </div>
-              </article>
-            </div>
-            <div class="project-hidden">
-              <article class="project__item swiper-slide">
-                <img src="assets/img/proyek/berjalan/saifulanwar.webp" alt="" class="project__img">
-                <div class="project__data">
-                  <h2 class="project__price">
-                    Th. <span>2023</span>
-                  </h2>
-                  <h3 class="project__title">
+                  <h3 class="card-title">
                     Paviliun RSUD Dr. Saiful Anwar
                   </h3>
-                  <p class="project__description">
-                    Bekerja sama dengan <b>Rs. Saiful Anwar</b><br>
-                    Lokasi : <b>Malang</b> <br>
-                    Pekerjaan Meliputi : <br>
-                    ▶ Mekanikal <br>
-                    ▶ Elektrikal <br>
-                    ▶ Plumbing <br>
-                  </p>
                 </div>
-              </article>
+                <div class="card-main">
+                  <div class="card-section is-active" id="cardabout">
+                    <div class="card-about">
+                      <p class="card-description">
+                        Bekerja sama dengan <b>RSUD Dr. Saiful Anwar</b><br>
+                        Lokasi : <b>Malang</b> <br>
+                        Pekerjaan Meliputi : <br>
+                        ▶ Mekanikal <br>
+                        ▶ Elektrikal <br>
+                        ▶ Plumbing <br>
+                      </p>
+                    </div>
+                  </div>
+                  <div class="card-section project-gallery swiper" id="cardgallery">
+                    <div class="swiper-wrapper">
+                      <div class="swiper-slide">
+                        <img src="assets/img/proyek/berjalan/FHUI.webp" loading="lazy" alt="Image Project"
+                          class="card-gallery">
+
+                      </div>
+                      <div class="swiper-slide">
+                        <img src="assets/img/proyek/berjalan/saifulanwar.webp" loading="lazy" alt="Image Project"
+                          class="card-gallery">
+
+                      </div>
+                      <div class="swiper-slide">
+                        <img src="assets/img/proyek/edu/arsipunnes.webp" loading="lazy" alt="Image Project"
+                          class="card-gallery">
+                      </div>
+                      <div class="swiper-slide">
+                        <img src="assets/img/proyek/hospital/puskesmasjepon.webp" loading="lazy" alt="Image Project"
+                          class="card-gallery">
+                      </div>
+                      <div class="swiper-slide">
+                        <img src="assets/img/proyek/mall/peterongan.webp" loading="lazy" alt="Image Project"
+                          class="card-gallery">
+                      </div>
+                      <div class="swiper-slide">
+                        <img src="assets/img/proyek/ofc/bupatidemak.webp" loading="lazy" alt="Image Project"
+                          class="card-gallery">
+                      </div>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                    <div class="swiper-button-next">
+                      <i class="ri-arrow-right-s-line"></i>
+                    </div>
+                    <div class="swiper-button-prev">
+                      <i class="ri-arrow-left-s-line"></i>
+                    </div>
+                  </div>
+                </div>
+                <div class="card-buttons">
+                  <button data-section="#cardabout" class="is-active">About</button>
+                  <button data-section="#cardgallery">Gallery</button>
+                </div>
+              </div>
             </div>
             <button type="button" class="loadMoreproject">Load More</button>
           </div>
 
           <!--==================== MALL ====================-->
-          <div class="projects__content grid d-flex" data-content id="mall">
-            <div class="project__item swiper-slide">
-              <img src="assets/img/proyek/mall/peterongan.webp" alt="" class="project__img">
-              <div class="project__data">
-                <h2 class="project__price">
-                  Th. <span>2016</span>
+          <div class="card-container grid" data-content id="mall">
+            <div class="card swiper-slide" data-state="#cardabout">
+              <div class="card-header">
+                <img src="assets/img/proyek/mall/peterongan.webp" loading="lazy" alt="Image Project"
+                  class="card-avatar">
+                <h2 class="card-tahun">
+                  Tahun <span>2016</span>
                 </h2>
-                <h3 class="project__title">
-                  Pasar Peterongan
+                <h3 class="card-title">
+                  Revitalisasi Pasar Peterongan<br>
+                  Kota Semarang
                 </h3>
-                <p class="project__description">
-                  Bekerja sama dengan <b>Pemerintah Kota Semarang</b><br>
-                  Lokasi : <b>Semarang</b> <br>
-                  Pekerjaan Meliputi : <br>
-                  ▶ Mekanikal <br>
-                  ▶ Elektrikal <br>
-                  ▶ Plumbing <br>
-                </p>
+              </div>
+              <div class="card-main">
+                <div class="card-section is-active" id="cardabout">
+                  <div class="card-about">
+                    <p class="card-description">
+                      Bekerja sama dengan <b>Pemerintah Kota Semarang</b><br>
+                      Lokasi : <b>Semarang</b> <br>
+                      Pekerjaan Meliputi : <br>
+                      ▶ Mekanikal <br>
+                      ▶ Elektrikal <br>
+                      ▶ Plumbing <br>
+                    </p>
+                  </div>
+                </div>
+                <div class="card-section project-gallery swiper" id="cardgallery">
+                  <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                      <img src="assets/img/proyek/mall/peterongan.webp" loading="lazy" alt="Image Project"
+                        class="card-gallery">
+
+                    </div>
+                    <div class="swiper-slide">
+                      <img src="assets/img/proyek/berjalan/saifulanwar.webp" loading="lazy" alt="Image Project"
+                        class="card-gallery">
+
+                    </div>
+                    <div class="swiper-slide">
+                      <img src="assets/img/proyek/edu/arsipunnes.webp" loading="lazy" alt="Image Project"
+                        class="card-gallery">
+                    </div>
+                    <div class="swiper-slide">
+                      <img src="assets/img/proyek/hospital/puskesmasjepon.webp" loading="lazy" alt="Image Project"
+                        class="card-gallery">
+                    </div>
+                    <div class="swiper-slide">
+                      <img src="assets/img/proyek/mall/peterongan.webp" loading="lazy" alt="Image Project"
+                        class="card-gallery">
+                    </div>
+                    <div class="swiper-slide">
+                      <img src="assets/img/proyek/ofc/bupatidemak.webp" loading="lazy" alt="Image Project"
+                        class="card-gallery">
+                    </div>
+                  </div>
+                  <div class="swiper-pagination"></div>
+                  <div class="swiper-button-next">
+                    <i class="ri-arrow-right-s-line"></i>
+                  </div>
+                  <div class="swiper-button-prev">
+                    <i class="ri-arrow-left-s-line"></i>
+                  </div>
+                </div>
+              </div>
+              <div class="card-buttons">
+                <button data-section="#cardabout" class="is-active">About</button>
+                <button data-section="#cardgallery">Gallery</button>
               </div>
             </div>
+
             <div class="project-hiddenmall1">
-              <div class="project__item swiper-slide">
-                <img src="assets/img/proyek/mall/pedurungan.webp" alt="" class="project__img">
-                <div class="project__data">
-                  <h2 class="project__price">
-                    Th. <span>2016</span>
+              <div class="card swiper-slide" data-state="#cardabout">
+                <div class="card-header">
+                  <img src="assets/img/proyek/mall/pedurungan.webp" loading="lazy" alt="Image Project"
+                    class="card-avatar">
+                  <h2 class="card-tahun">
+                    Tahun <span>2016</span>
                   </h2>
-                  <h3 class="project__title">
-                    Pasar Pedurungan
+                  <h3 class="card-title">
+                    Pembangunan Pasar Pedurungan<br>
+                    Kota Semarang
                   </h3>
-                  <p class="project__description">
-                    Bekerja sama dengan <b>Pemerintah Kota Semarang</b><br>
-                    Lokasi : <b>Semarang</b> <br>
-                    Pekerjaan Meliputi : <br>
-                    ▶ Mekanikal <br>
-                    ▶ Elektrikal <br>
-                    ▶ Plumbing <br>
-                  </p>
+                </div>
+                <div class="card-main">
+                  <div class="card-section is-active" id="cardabout">
+                    <div class="card-about">
+                      <p class="card-description">
+                        Bekerja sama dengan <b>Pemerintah Kota Semarang</b><br>
+                        Lokasi : <b>Semarang</b> <br>
+                        Pekerjaan Meliputi : <br>
+                        ▶ Mekanikal <br>
+                        ▶ Elektrikal <br>
+                        ▶ Plumbing <br>
+                      </p>
+                    </div>
+                  </div>
+                  <div class="card-section project-gallery swiper" id="cardgallery">
+                    <div class="swiper-wrapper">
+                      <div class="swiper-slide">
+                        <img src="assets/img/proyek/mall/pedurungan.webp" loading="lazy" alt="Image Project"
+                          class="card-gallery">
+
+                      </div>
+                      <div class="swiper-slide">
+                        <img src="assets/img/proyek/berjalan/saifulanwar.webp" loading="lazy" alt="Image Project"
+                          class="card-gallery">
+
+                      </div>
+                      <div class="swiper-slide">
+                        <img src="assets/img/proyek/edu/arsipunnes.webp" loading="lazy" alt="Image Project"
+                          class="card-gallery">
+                      </div>
+                      <div class="swiper-slide">
+                        <img src="assets/img/proyek/hospital/puskesmasjepon.webp" loading="lazy" alt="Image Project"
+                          class="card-gallery">
+                      </div>
+                      <div class="swiper-slide">
+                        <img src="assets/img/proyek/mall/peterongan.webp" loading="lazy" alt="Image Project"
+                          class="card-gallery">
+                      </div>
+                      <div class="swiper-slide">
+                        <img src="assets/img/proyek/ofc/bupatidemak.webp" loading="lazy" alt="Image Project"
+                          class="card-gallery">
+                      </div>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                    <div class="swiper-button-next">
+                      <i class="ri-arrow-right-s-line"></i>
+                    </div>
+                    <div class="swiper-button-prev">
+                      <i class="ri-arrow-left-s-line"></i>
+                    </div>
+
+                  </div>
+                </div>
+                <div class="card-buttons">
+                  <button data-section="#cardabout" class="is-active">About</button>
+                  <button data-section="#cardgallery">Gallery</button>
                 </div>
               </div>
             </div>
+
             <div class="project-hiddenmall">
-              <div class="project__item swiper-slide">
-                <img src="assets/img/proyek/mall/bungkarno.webp" alt="" class="project__img">
-                <div class="project__data">
-                  <h2 class="project__price">
-                    Th. <span>2017</span>
+              <div class="card swiper-slide" data-state="#cardabout">
+                <div class="card-header">
+                  <img src="assets/img/proyek/mall/bungkarno.webp" loading="lazy" alt="Image Project"
+                    class="card-avatar">
+                  <h2 class="card-tahun">
+                    Tahun <span>2017</span>
                   </h2>
-                  <h3 class="project__title">
-                    Pasar Bung Karno
+                  <h3 class="card-title">
+                    Pembangunan Pasar Bung Karno Baturetno Kota Wonogiri
                   </h3>
-                  <p class="project__description">
-                    Bekerja sama dengan <b>Pemerintah Kota Wonogiri</b><br>
-                    Lokasi : <b>Wonogiri</b> <br>
-                    Pekerjaan Meliputi : <br>
-                    ▶ Mekanikal <br>
-                    ▶ Elektrikal <br>
-                    ▶ Plumbing <br>
-                  </p>
+                </div>
+                <div class="card-main">
+                  <div class="card-section is-active" id="cardabout">
+                    <div class="card-about">
+                      <p class="card-description">
+                        Bekerja sama dengan <b>Pemerintah Kota Wonogiri</b><br>
+                        Lokasi : <b>Wonogiri</b> <br>
+                        Pekerjaan Meliputi : <br>
+                        ▶ Mekanikal <br>
+                        ▶ Elektrikal <br>
+                        ▶ Plumbing <br>
+                      </p>
+                    </div>
+                  </div>
+                  <div class="card-section project-gallery swiper" id="cardgallery">
+                    <div class="swiper-wrapper">
+                      <div class="swiper-slide">
+                        <img src="assets/img/proyek/mall/bungkarno.webp" loading="lazy" alt="Image Project"
+                          class="card-gallery">
+
+                      </div>
+                      <div class="swiper-slide">
+                        <img src="assets/img/proyek/berjalan/saifulanwar.webp" loading="lazy" alt="Image Project"
+                          class="card-gallery">
+
+                      </div>
+                      <div class="swiper-slide">
+                        <img src="assets/img/proyek/edu/arsipunnes.webp" loading="lazy" alt="Image Project"
+                          class="card-gallery">
+                      </div>
+                      <div class="swiper-slide">
+                        <img src="assets/img/proyek/hospital/puskesmasjepon.webp" loading="lazy" alt="Image Project"
+                          class="card-gallery">
+                      </div>
+                      <div class="swiper-slide">
+                        <img src="assets/img/proyek/mall/peterongan.webp" loading="lazy" alt="Image Project"
+                          class="card-gallery">
+                      </div>
+                      <div class="swiper-slide">
+                        <img src="assets/img/proyek/ofc/bupatidemak.webp" loading="lazy" alt="Image Project"
+                          class="card-gallery">
+                      </div>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                    <div class="swiper-button-next">
+                      <i class="ri-arrow-right-s-line"></i>
+                    </div>
+                    <div class="swiper-button-prev">
+                      <i class="ri-arrow-left-s-line"></i>
+                    </div>
+
+                  </div>
+                </div>
+                <div class="card-buttons">
+                  <button data-section="#cardabout" class="is-active">About</button>
+                  <button data-section="#cardgallery">Gallery</button>
                 </div>
               </div>
             </div>
+            
             <div class="project-hiddenmall">
-              <div class="project__item swiper-slide">
-                <img src="assets/img/proyek/mall/srondol.webp" alt="" class="project__img">
-                <div class="project__data">
-                  <h2 class="project__price">
-                    Th. <span>2017</span>
+              <div class="card swiper-slide" data-state="#cardabout">
+                <div class="card-header">
+                  <img src="assets/img/proyek/mall/srondol.webp" loading="lazy" alt="Image Project"
+                    class="card-avatar">
+                  <h2 class="card-tahun">
+                    Tahun <span>2017</span>
                   </h2>
-                  <h3 class="project__title">
-                    Pasar Srondol
+                  <h3 class="card-title">
+                    Pembangunan Pasar Srondol<br>
+                    Kota Semarang
                   </h3>
-                  <p class="project__description">
-                    Bekerja sama dengan <b>Pemerintah Kota Semarang</b><br>
-                    Lokasi : <b>Semarang</b> <br>
-                    Pekerjaan Meliputi : <br>
-                    ▶ Mekanikal <br>
-                    ▶ Elektrikal <br>
-                    ▶ Plumbing <br>
-                  </p>
+                </div>
+                <div class="card-main">
+                  <div class="card-section is-active" id="cardabout">
+                    <div class="card-about">
+                      <p class="card-description">
+                        Bekerja sama dengan <b>Pemerintah Kota Semarang</b><br>
+                        Lokasi : <b>Semarang</b> <br>
+                        Pekerjaan Meliputi : <br>
+                        ▶ Mekanikal <br>
+                        ▶ Elektrikal <br>
+                        ▶ Plumbing <br>
+                      </p>
+                    </div>
+                  </div>
+                  <div class="card-section project-gallery swiper" id="cardgallery">
+                    <div class="swiper-wrapper">
+                      <div class="swiper-slide">
+                        <img src="assets/img/proyek/mall/srondol.webp" loading="lazy" alt="Image Project"
+                          class="card-gallery">
+
+                      </div>
+                      <div class="swiper-slide">
+                        <img src="assets/img/proyek/berjalan/saifulanwar.webp" loading="lazy" alt="Image Project"
+                          class="card-gallery">
+
+                      </div>
+                      <div class="swiper-slide">
+                        <img src="assets/img/proyek/edu/arsipunnes.webp" loading="lazy" alt="Image Project"
+                          class="card-gallery">
+                      </div>
+                      <div class="swiper-slide">
+                        <img src="assets/img/proyek/hospital/puskesmasjepon.webp" loading="lazy" alt="Image Project"
+                          class="card-gallery">
+                      </div>
+                      <div class="swiper-slide">
+                        <img src="assets/img/proyek/mall/peterongan.webp" loading="lazy" alt="Image Project"
+                          class="card-gallery">
+                      </div>
+                      <div class="swiper-slide">
+                        <img src="assets/img/proyek/ofc/bupatidemak.webp" loading="lazy" alt="Image Project"
+                          class="card-gallery">
+                      </div>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                    <div class="swiper-button-next">
+                      <i class="ri-arrow-right-s-line"></i>
+                    </div>
+                    <div class="swiper-button-prev">
+                      <i class="ri-arrow-left-s-line"></i>
+                    </div>
+
+                  </div>
+                </div>
+                <div class="card-buttons">
+                  <button data-section="#cardabout" class="is-active">About</button>
+                  <button data-section="#cardgallery">Gallery</button>
                 </div>
               </div>
             </div>
+
             <div class="project-hiddenmall">
-              <div class="project__item swiper-slide">
-                <img src="assets/img/proyek/mall/purwantoro.webp" alt="" class="project__img">
-                <div class="project__data">
-                  <h2 class="project__price">
-                    Th. <span>2018</span>
+              <div class="card swiper-slide" data-state="#cardabout">
+                <div class="card-header">
+                  <img src="assets/img/proyek/mall/purwantoro.webp" loading="lazy" alt="Image Project"
+                    class="card-avatar">
+                  <h2 class="card-tahun">
+                    Tahun <span>2018</span>
                   </h2>
-                  <h3 class="project__title">
-                    Pasar Purwantoro
+                  <h3 class="card-title">
+                    Pembangunan Pasar Purwantoro<br>
+                    Kota Wonogiri
                   </h3>
-                  <p class="project__description">
-                    Bekerja sama dengan <b>Pemerintah Kota Wonogiri</b><br>
-                    Lokasi : <b>Wonogiri</b> <br>
-                    Pekerjaan Meliputi : <br>
-                    ▶ Mekanikal <br>
-                    ▶ Elektrikal <br>
-                    ▶ Plumbing <br>
-                  </p>
+                </div>
+                <div class="card-main">
+                  <div class="card-section is-active" id="cardabout">
+                    <div class="card-about">
+                      <p class="card-description">
+                        Bekerja sama dengan <b>Pemerintah Kota Wonogiri</b><br>
+                        Lokasi : <b>Wonogiri</b> <br>
+                        Pekerjaan Meliputi : <br>
+                        ▶ Mekanikal <br>
+                        ▶ Elektrikal <br>
+                        ▶ Plumbing <br>
+                      </p>
+                    </div>
+                  </div>
+                  <div class="card-section project-gallery swiper" id="cardgallery">
+                    <div class="swiper-wrapper">
+                      <div class="swiper-slide">
+                        <img src="assets/img/proyek/mall/srondol.webp" loading="lazy" alt="Image Project"
+                          class="card-gallery">
+
+                      </div>
+                      <div class="swiper-slide">
+                        <img src="assets/img/proyek/berjalan/saifulanwar.webp" loading="lazy" alt="Image Project"
+                          class="card-gallery">
+
+                      </div>
+                      <div class="swiper-slide">
+                        <img src="assets/img/proyek/edu/arsipunnes.webp" loading="lazy" alt="Image Project"
+                          class="card-gallery">
+                      </div>
+                      <div class="swiper-slide">
+                        <img src="assets/img/proyek/hospital/puskesmasjepon.webp" loading="lazy" alt="Image Project"
+                          class="card-gallery">
+                      </div>
+                      <div class="swiper-slide">
+                        <img src="assets/img/proyek/mall/peterongan.webp" loading="lazy" alt="Image Project"
+                          class="card-gallery">
+                      </div>
+                      <div class="swiper-slide">
+                        <img src="assets/img/proyek/ofc/bupatidemak.webp" loading="lazy" alt="Image Project"
+                          class="card-gallery">
+                      </div>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                    <div class="swiper-button-next">
+                      <i class="ri-arrow-right-s-line"></i>
+                    </div>
+                    <div class="swiper-button-prev">
+                      <i class="ri-arrow-left-s-line"></i>
+                    </div>
+
+                  </div>
+                </div>
+                <div class="card-buttons">
+                  <button data-section="#cardabout" class="is-active">About</button>
+                  <button data-section="#cardgallery">Gallery</button>
                 </div>
               </div>
             </div>
+
             <div class="project-hiddenmall">
-              <div class="project__item swiper-slide">
-                <img src="assets/img/proyek/mall/wuryantoro.webp" alt="" class="project__img">
-                <div class="project__data">
-                  <h2 class="project__price">
-                    Th. <span>2018</span>
+              <div class="card swiper-slide" data-state="#cardabout">
+                <div class="card-header">
+                  <img src="assets/img/proyek/mall/wuryantoro.webp" loading="lazy" alt="Image Project"
+                    class="card-avatar">
+                  <h2 class="card-tahun">
+                    Tahun <span>2018</span>
                   </h2>
-                  <h3 class="project__title">
-                    Pasar Wuryantoro
+                  <h3 class="card-title">
+                    Pembangunan Pasar Wuryantoro<br>
+                    Kota Wonogiri
                   </h3>
-                  <p class="project__description">
-                    Bekerja sama dengan <b>Pemerintah Kota Wonogiri</b><br>
-                    Lokasi : <b>Wonogiri</b> <br>
-                    Pekerjaan Meliputi : <br>
-                    ▶ Mekanikal <br>
-                    ▶ Elektrikal <br>
-                    ▶ Plumbing <br>
-                  </p>
+                </div>
+                <div class="card-main">
+                  <div class="card-section is-active" id="cardabout">
+                    <div class="card-about">
+                      <p class="card-description">
+                        Bekerja sama dengan <b>Pemerintah Kota Wonogiri</b><br>
+                        Lokasi : <b>Wonogiri</b> <br>
+                        Pekerjaan Meliputi : <br>
+                        ▶ Mekanikal <br>
+                        ▶ Elektrikal <br>
+                        ▶ Plumbing <br>
+                      </p>
+                    </div>
+                  </div>
+                  <div class="card-section project-gallery swiper" id="cardgallery">
+                    <div class="swiper-wrapper">
+                      <div class="swiper-slide">
+                        <img src="assets/img/proyek/mall/srondol.webp" loading="lazy" alt="Image Project"
+                          class="card-gallery">
+
+                      </div>
+                      <div class="swiper-slide">
+                        <img src="assets/img/proyek/berjalan/saifulanwar.webp" loading="lazy" alt="Image Project"
+                          class="card-gallery">
+
+                      </div>
+                      <div class="swiper-slide">
+                        <img src="assets/img/proyek/edu/arsipunnes.webp" loading="lazy" alt="Image Project"
+                          class="card-gallery">
+                      </div>
+                      <div class="swiper-slide">
+                        <img src="assets/img/proyek/hospital/puskesmasjepon.webp" loading="lazy" alt="Image Project"
+                          class="card-gallery">
+                      </div>
+                      <div class="swiper-slide">
+                        <img src="assets/img/proyek/mall/peterongan.webp" loading="lazy" alt="Image Project"
+                          class="card-gallery">
+                      </div>
+                      <div class="swiper-slide">
+                        <img src="assets/img/proyek/ofc/bupatidemak.webp" loading="lazy" alt="Image Project"
+                          class="card-gallery">
+                      </div>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                    <div class="swiper-button-next">
+                      <i class="ri-arrow-right-s-line"></i>
+                    </div>
+                    <div class="swiper-button-prev">
+                      <i class="ri-arrow-left-s-line"></i>
+                    </div>
+
+                  </div>
+                </div>
+                <div class="card-buttons">
+                  <button data-section="#cardabout" class="is-active">About</button>
+                  <button data-section="#cardgallery">Gallery</button>
                 </div>
               </div>
             </div>
+
             <div class="project-hiddenmall">
-              <div class="project__item swiper-slide">
-                <img src="assets/img/proyek/mall/wonosobo.webp" alt="" class="project__img">
-                <div class="project__data">
-                  <h2 class="project__price">
-                    Th. <span>2019</span>
+              <div class="card swiper-slide" data-state="#cardabout">
+                <div class="card-header">
+                  <img src="assets/img/proyek/mall/wonosobo.webp" loading="lazy" alt="Image Project"
+                    class="card-avatar">
+                  <h2 class="card-tahun">
+                    Tahun <span>2019</span>
                   </h2>
-                  <h3 class="project__title">
-                    Pasar Wonosobo
+                  <h3 class="card-title">
+                    Pembangunan Pasar Induk Wonosobo<br>
+                    Kota Wonosobo
                   </h3>
-                  <p class="project__description">
-                    Bekerja sama dengan <b>Pemerintah Kota Wonosobo</b><br>
-                    Lokasi : <b>Wonosobo</b> <br>
-                    Pekerjaan Meliputi : <br>
-                    ▶ Mekanikal <br>
-                    ▶ Elektrikal <br>
-                    ▶ Plumbing <br>
-                  </p>
+                </div>
+                <div class="card-main">
+                  <div class="card-section is-active" id="cardabout">
+                    <div class="card-about">
+                      <p class="card-description">
+                        Bekerja sama dengan <b>Pemerintah Kota Wonogiri</b><br>
+                        Lokasi : <b>Wonogiri</b> <br>
+                        Pekerjaan Meliputi : <br>
+                        ▶ Mekanikal <br>
+                        ▶ Elektrikal <br>
+                        ▶ Plumbing <br>
+                      </p>
+                    </div>
+                  </div>
+                  <div class="card-section project-gallery swiper" id="cardgallery">
+                    <div class="swiper-wrapper">
+                      <div class="swiper-slide">
+                        <img src="assets/img/proyek/mall/srondol.webp" loading="lazy" alt="Image Project"
+                          class="card-gallery">
+
+                      </div>
+                      <div class="swiper-slide">
+                        <img src="assets/img/proyek/berjalan/saifulanwar.webp" loading="lazy" alt="Image Project"
+                          class="card-gallery">
+
+                      </div>
+                      <div class="swiper-slide">
+                        <img src="assets/img/proyek/edu/arsipunnes.webp" loading="lazy" alt="Image Project"
+                          class="card-gallery">
+                      </div>
+                      <div class="swiper-slide">
+                        <img src="assets/img/proyek/hospital/puskesmasjepon.webp" loading="lazy" alt="Image Project"
+                          class="card-gallery">
+                      </div>
+                      <div class="swiper-slide">
+                        <img src="assets/img/proyek/mall/peterongan.webp" loading="lazy" alt="Image Project"
+                          class="card-gallery">
+                      </div>
+                      <div class="swiper-slide">
+                        <img src="assets/img/proyek/ofc/bupatidemak.webp" loading="lazy" alt="Image Project"
+                          class="card-gallery">
+                      </div>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                    <div class="swiper-button-next">
+                      <i class="ri-arrow-right-s-line"></i>
+                    </div>
+                    <div class="swiper-button-prev">
+                      <i class="ri-arrow-left-s-line"></i>
+                    </div>
+
+                  </div>
+                </div>
+                <div class="card-buttons">
+                  <button data-section="#cardabout" class="is-active">About</button>
+                  <button data-section="#cardgallery">Gallery</button>
                 </div>
               </div>
             </div>
@@ -1847,8 +2388,8 @@
             <button type="button" class="loadMoresports">Load More</button>
           </div>
 
-           <!--==================== OTHER ====================-->
-           <div class="projects__content grid" data-content id="other">
+          <!--==================== OTHER ====================-->
+          <div class="projects__content grid" data-content id="other">
             <div class="project__item swiper-slide">
               <img src="assets/img/proyek/other/hotelsindoro.webp" alt="" class="project__img">
               <div class="project__data">
@@ -1946,7 +2487,7 @@
       <div class="contact__container container grid section__border">
         <div class="contact__content">
           <h3 class="contact__title">
-            <i class="ri-map-pin-2-line"></i> Direction            
+            <i class="ri-map-pin-2-line"></i> Direction
           </h3>
 
           <div class="contact__info">
@@ -1954,8 +2495,7 @@
               <span class="contact__data-title">Email</span>
               <span class="contact__data-info">dwitunggalenergi@gmail.com</span>
 
-              <a href="mailto:dwitunggalenergi@gmail.com?subject=subject text"
-                target="_blank" class="contact__button">
+              <a href="mailto:dwitunggalenergi@gmail.com?subject=subject text" target="_blank" class="contact__button">
                 Write me <i class="ri-arrow-right-line"></i>
               </a>
             </div>
@@ -2337,7 +2877,7 @@
   <script src="assets/js/scrollreveal.min.js"></script>
 
   <!--=============== SWIPER JS ===============-->
-  <script src="assets/js/swiper-bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
 
   <!--=============== YTPlayer JS ===============-->
   <!-- <script src="assets/js/jquery.mb.YTPlayer.js"></script> -->
@@ -2348,7 +2888,6 @@
   <!--=============== MAIN JS ===============-->
   <script src="assets/js/jquery-3.5.1.min.js"></script>
   <script src="assets/js/plugins.js"></script>
-  <script src="assets/js/particles.min.js"></script>
 
   <!--======================== EMAIL JS =========================-->
   <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
