@@ -91,7 +91,7 @@ var swiperPopular = new Swiper(".services__container", {
 });
 
 /*=============== SWIPER GALLERY ===============*/
-var swiperGallery = new Swiper(".project-gallery", {
+var swiperGallery = new Swiper(".card-gal", {
   spaceBetweem: 32,
   grabCursor: true,
   centeredSlides: true,
