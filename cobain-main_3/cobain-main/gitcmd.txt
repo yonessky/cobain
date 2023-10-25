@@ -1,0 +1,10 @@
+1. git init
+2. git add README.md
+3 .git remote add origin https://github.com...
+4. git remote -v ( to check addres valid/no )
+/// git remote set-url origin https://github.com/... ( to change address ) ///
+5. git add .
+6. git commit -m "first commit"
+7. git branch -M main
+8. git push --set-upstream origin main
+9. git push -u origin main

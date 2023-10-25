@@ -273,6 +273,25 @@ tabs.forEach((tab) => {
   });
 });
 
+const cardGal = document.querySelectorAll("[card-target]"),
+  gal = document.querySelectorAll("[card-content]");
+
+cardGal.forEach((tab) => {
+  tab.addEventListener("click", () => {
+    const target = document.querySelector(tab.dataset.target);
+
+    gal.forEach((tc) => {
+      tc.classList.remove("card-active");
+    });
+    target.classList.add("card-active");
+
+    cardGal.forEach((t) => {
+      t.classList.remove("card-tab-active");
+    });
+    tab.classList.add("card-tab-active");
+  });
+});
+
 /** Filter bottom **/
 const buttons = document.querySelectorAll(".card-buttons button");
 const cardSections = document.querySelectorAll(".card-section");
