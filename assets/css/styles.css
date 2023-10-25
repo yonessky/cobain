@@ -196,7 +196,8 @@ body.dark-theme {
 .dark-theme .filters__content {
   background-color: var(--body-color);
 }
-.dark-theme .filters .filter-tab-active {
+.dark-theme .filters .filter-tab-active,
+.dark-theme .card .card-tab-active {
   background-color: var(--text-color-lighten);
 }
 .dark-theme .filters__button {
@@ -1273,7 +1274,7 @@ body.dark-theme {
   color: var(--first-color);
 }
 .swiper-pagination {
-  margin-bottom: 3rem;
+  margin-bottom: 15rem;
 }
 .swiper-button-prev {
   left: calc(50% - 3rem);
@@ -1285,6 +1286,7 @@ body.dark-theme {
 /*===================== FILTERS TAB =========================*/
 .filters {
   position: relative;
+  margin-bottom: 5rem;
 }
 
 .filters__content {
@@ -1325,7 +1327,8 @@ body.dark-theme {
   display: grid;
 }
 /* Activate button filter */
-.filter-tab-active {
+.filter-tab-active,
+.card-tab-active {
   background-color: var(--text-color-lighten);
   box-shadow: 0 6px 6px hsla(228, 66%, 45%, .1);
 }
@@ -1365,32 +1368,31 @@ body.dark-theme {
   box-shadow: 0 12px 16px hsla(228, 66%, 45%, .1);
 }
 /*====================== PROJECTS =====================*/
+.card-container {
+  /* outline: 1px solid; */
+  width: 100%;
+  /* display: grid; */
+  /* justify-content: space-around; */
+  /* align-items: center; */
+  /* gap: 10px; */
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start;
+  margin-bottom: 4rem;
+}
 .card {
+  /* outline: 1px solid; */
   max-width: 340px;
-  padding: 1rem 1rem 0 1rem;
+  padding: 1rem 1rem .5rem 1rem;
   position: relative;
   z-index: 1;
-  overflow-y: auto;
-  overflow-x: hidden;
+  /* overflow-y: auto; */
+  /* overflow-x: hidden; */
   background-color: white;
-  display: flex;
+  /* display: flex; */
   transition: 0.3s;
-  flex-direction: column;
   border-radius: 10px;
-  box-shadow: 0 12px 16px hsla(228, 66%, 45%, .1);
-}
-.project__item {
-  position: relative;
-  display: flex;
-  height: 200px;
-  flex-shrink: 0;
-  width: 100%;
-  background-color: var(--container-color);
-  padding: .5rem .5rem 1.5rem;
-  border-radius: 1rem;
-  /* margin: auto .15rem; */
-  transition: .4s;
-  border: solid 1px rgb(241, 241, 241);
   box-shadow: 0 12px 16px hsla(228, 66%, 45%, .1);
 }
 .card[data-state="#cardabout"] {
@@ -1399,6 +1401,21 @@ body.dark-theme {
 .card[data-state="#cardabout"] .card-main {
   padding-top: 0;
 }
+.card-gal {
+  max-width: 100%;
+  /* outline: 1px solid; */
+  position: relative;
+  transition: .3s;
+}
+.card img {
+  border-radius: 10px;
+  margin-bottom: 2rem;
+  box-shadow: 0 8px 8px rgba(0, 0, 0, 0.2);
+  -o-object-position: center;
+     object-position: center;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
 .card-header {
   position: relative;
   /* display: flex; */
@@ -1406,7 +1423,6 @@ body.dark-theme {
   /* flex-shrink: 0; */
   max-width: 100%;
   transition: 0.3s;
-  
 }
 .card-avatar {
   max-width: 100%;
@@ -1426,7 +1442,6 @@ body.dark-theme {
 .card-tahun {
   position: absolute;
   text-align: left;
-  top: 15.5rem;
   font-size: var(--h2-font-size);
   color: var(--text-color);
 }
@@ -1438,12 +1453,12 @@ body.dark-theme {
   text-align: left;
   font-size: var(--h3-font-size);
   margin-bottom: .75rem;
-  top: 18rem;
-  
-  line-height: 25px;
+  margin-top: 28px;
+  line-height: 23px;
 }
 .card-description {
   text-align: left;
+  margin-top: 6.5rem;
   font-size: var(--small-font-size);
   margin-bottom: .75rem;
 }
@@ -2108,9 +2123,6 @@ body.dark-theme {
   .loadMoreother {
     margin-top: 0;
   }
-  .card-container {
-    gap: 1rem;
-  }
 }
 
 @media screen and (min-width: 320px) {
@@ -2143,10 +2155,8 @@ body.dark-theme {
     font-size: 13px;
   }
   .card-container {
+    grid-template-rows: repeat(auto-fill, 320px);
     grid-template-columns: 320px;
-    width: 100%;
-    justify-content: center;
-    gap: 1rem;
   }
   
   /* .projects__content {
@@ -2224,10 +2234,6 @@ body.dark-theme {
     justify-content: center;
   }
   .filters__content {
-    justify-content: center;
-    display: flex;
-    align-items: center;
-    flex-wrap: wrap;
     margin-bottom: 3rem;
   }
   .filters__button {
@@ -2339,7 +2345,7 @@ body.dark-theme {
   }
   .loadMoreproject {
     margin-left: 15rem;
-    margin-top: 1.5rem;
+    margin-top: 15rem;
   }
   .loadMoremall {
     margin-left: -6rem;

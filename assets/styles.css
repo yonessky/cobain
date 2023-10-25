@@ -881,7 +881,7 @@ body.dark-theme {
 .features-carousel .services__item {
     width: 290px;
     margin: 8px;
-    padding: 50px;
+    padding: 30px;
     background-color: var(--container-color);
     box-shadow: 0 5px 83px 0 rgba(40, 40, 40, .1);
     transition: .4s;
