@@ -1379,7 +1379,7 @@ body.dark-theme {
   flex-wrap: wrap;
   justify-content: center;
   align-items: flex-start;
-  margin-bottom: 4rem;
+  margin: 0;
 }
 .card {
   /* outline: 1px solid; */
@@ -2088,25 +2088,33 @@ body.dark-theme {
     margin-right: 1rem;
     font-size: var(--h3-font-size);
   }
+  .card-container {
+    gap: 10px;
+    justify-content: center;
+  }
   .card {
     max-width: 290px;
-    padding: .8rem .8rem 0 .8rem;
-    border-radius: 5px;
+    padding: 1rem 1rem .5rem 1rem;
+    border-radius: 10px;
+  }
+  .swiper-pagination {
+    margin-bottom: 13rem;
+  }
+  .card img {
+    margin-bottom: 1.5rem;
   }
   .card-tahun {
     font-size: 15px;
-    margin-top: -30px;
   }
   .card-title {
     font-size: 14px;
-    line-height: 17px;
-    margin-top: -40px;
+    line-height: 20px;
   }
   .card-description {
     font-size: 13px;
     padding: 0;
     line-height: 17px;
-    margin-top: -60px;
+    margin-top: 5.8rem;
   }
   .card.is-active .card-title {
     font-size: 12px;
@@ -2157,22 +2165,16 @@ body.dark-theme {
   .card-container {
     grid-template-rows: repeat(auto-fill, 320px);
     grid-template-columns: 320px;
+    gap: 10px;
   }
-  
-  /* .projects__content {
-    grid-template-columns: 320px;
-    width: 100%;
-    justify-content: center;
-  } */
   .project__item {
     width: 100%;
     aspect-ratio: 4 / 3;
     justify-content: center;
   }
-  /* .subscribe__button {
-    margin-left: 2rem;
-    margin-right: 2rem;
-  } */
+  .loadMoreproject {
+    margin-top: 15rem;
+  }
 }
 
 /* For medium devices */
@@ -2261,9 +2263,7 @@ body.dark-theme {
   .project-hiddenother1 > .card {
     display: none;
   }
-  .loadMoreproject {
-    margin-top: 0;
-  }
+  
   .loadMoremall {
     margin-top: -45px;
   }
@@ -2330,10 +2330,6 @@ body.dark-theme {
     grid-template-columns: repeat(2, 332px);
     gap: 1rem;
   }
-  /* .projects__content {
-    grid-template-columns: repeat(2, 332px);
-    gap: 1rem;
-  } */
   .project-hidden > .card,
   .project-hiddenmall > .card ,
   .project-hiddenhos > .card,
