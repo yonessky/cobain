@@ -1291,7 +1291,7 @@ body.dark-theme {
 
 .filters__content {
   width: 100%;
-  margin-bottom: 1rem;
+  margin-bottom: 2rem;
   /* background: linear-gradient(180deg,
                 var(--text-color) 0%,
                 var(--text-color-lighten) 100%); */
@@ -1406,10 +1406,11 @@ body.dark-theme {
   /* outline: 1px solid; */
   position: relative;
   transition: .3s;
+  gap: 10rem;
 }
 .card img {
   border-radius: 10px;
-  margin-bottom: 2rem;
+  margin-bottom: 3rem;
   box-shadow: 0 8px 8px rgba(0, 0, 0, 0.2);
   -o-object-position: center;
      object-position: center;
@@ -1453,12 +1454,12 @@ body.dark-theme {
   text-align: left;
   font-size: var(--h3-font-size);
   margin-bottom: .75rem;
-  margin-top: 28px;
+  margin-top: 2rem;
   line-height: 23px;
 }
 .card-description {
   text-align: left;
-  margin-top: 6.5rem;
+  margin-top: 6.8rem;
   font-size: var(--small-font-size);
   margin-bottom: .75rem;
 }
@@ -1555,7 +1556,7 @@ body.dark-theme {
 .project__tahun span {
   color: var(--second-color);
 }
-.card.is-active .card-header {
+/* .card.is-active .card-header {
   height: 80px;
   top: 5px;
 }
@@ -1577,7 +1578,7 @@ body.dark-theme {
   font-size: 13px;
   line-height: 18px;
   transform: none;
-}
+} */
 .projects__modal {
   position: absolute;
   width: 100%;
@@ -2175,6 +2176,18 @@ body.dark-theme {
   .loadMoreproject {
     margin-top: 15rem;
   }
+  .card-tahun {
+    margin: 0;
+  }
+  .card-title {
+    margin-top: 2.2rem;
+  }
+  .card-description {
+    margin-top: 7rem;
+  }
+  .swiper-pagination {
+    margin-bottom: 16.5rem;
+  }
 }
 
 /* For medium devices */
@@ -2226,23 +2239,20 @@ body.dark-theme {
     width: 100%;
     padding: 20px;
   }
-  /* .projects__content {
-    grid-template-columns: 370px;
-    justify-content: center;
-  } */
   .project__item {
     width: 100%;
     aspect-ratio: 4 / 3;
     justify-content: center;
   }
-  .filters__content {
-    margin-bottom: 3rem;
-  }
+
   .filters__button {
     justify-items: center;
   }
   .subscribe__container {
     padding: 3rem 10rem;
+  }
+  .card-container {
+    margin: 0;
   }
 }
 
@@ -2611,9 +2621,6 @@ body.dark-theme {
     flex: 0 0 100%;
     max-width: 100%;
   }
-  /* .projects__content {
-    gap: 2rem 3rem;
-  } */
   .services {
     margin-top: 4rem;
   }
