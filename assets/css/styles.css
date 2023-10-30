@@ -1274,7 +1274,7 @@ body.dark-theme {
   color: var(--first-color);
 }
 .swiper-pagination {
-  margin-bottom: 15.5rem;
+  margin-bottom: 16rem;
 }
 .swiper-button-prev {
   left: calc(50% - 3rem);
@@ -1343,7 +1343,7 @@ body.dark-theme {
   color: #fff;
   justify-content: center;
   text-align: center;
-  margin-top: 2rem;
+  margin-top: 10%;
   margin-right: auto;
   margin-left: auto;
   padding: 10px;
@@ -2104,9 +2104,6 @@ body.dark-theme {
     padding: 1rem 1rem .5rem 1rem;
     border-radius: 10px;
   }
-  .swiper-pagination {
-    margin-bottom: 13.6rem;
-  }
   .card img {
     margin-bottom: 1.5rem;
   }
@@ -2134,7 +2131,7 @@ body.dark-theme {
   .loadMoreoffc,
   .loadMoresports,
   .loadMoreother {
-    margin-top: 0;
+    margin-top: 10%;
   }
 }
 
@@ -2168,7 +2165,6 @@ body.dark-theme {
     font-size: 13px;
   }
   .card-container {
-    grid-template-rows: repeat(auto-fill, 320px);
     grid-template-columns: 320px;
     gap: 10px;
   }
@@ -2177,8 +2173,16 @@ body.dark-theme {
     aspect-ratio: 4 / 3;
     justify-content: center;
   }
-  .loadMoreproject {
-    margin-top: 15rem;
+  .loadMoreproject,
+  .loadMorehos,
+  .loadMoreedu,
+  .loadMoreoffc,
+  .loadMoresports,
+  .loadMoreother {
+    margin-top: 10%;
+  }
+  .loadMoremall {
+    margin-top: 50%;
   }
   .card-tahun {
     margin: 0;
@@ -2351,8 +2355,8 @@ body.dark-theme {
     display: none;
   }
   .loadMoreproject {
-    margin-left: 15rem;
-    margin-top: 15rem;
+    margin-left: 70%;
+    margin-top: 10%;
   }
   .loadMoremall {
     margin-left: -6rem;
@@ -2378,8 +2382,7 @@ body.dark-theme {
     margin-top: .5rem;
   }
   .swiper-pagination {
-    margin-bottom: 14.23
-    3rem;
+    margin-bottom: 16rem;
   }
 }
 
@@ -2642,7 +2645,7 @@ body.dark-theme {
     margin-bottom: 1.5rem;
   }
   .loadMoreproject {
-    margin-top: 18rem;
+    margin-top: 10%;
   }
 }
 
