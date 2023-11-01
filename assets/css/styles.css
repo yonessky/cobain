@@ -2125,13 +2125,15 @@ body.dark-theme {
     transform: none;
   }
   .loadMoreproject,
-  .loadMoremall,
   .loadMorehos,
   .loadMoreedu,
   .loadMoreoffc,
   .loadMoresports,
   .loadMoreother {
     margin-top: 10%;
+  }
+  .loadMoremall {
+    margin-top: 0;
   }
 }
 
@@ -2182,7 +2184,7 @@ body.dark-theme {
     margin-top: 10%;
   }
   .loadMoremall {
-    margin-top: 50%;
+    margin-top: 0;
   }
   .card-tahun {
     margin: 0;
@@ -2278,10 +2280,6 @@ body.dark-theme {
   .project-hiddenother1 > .card {
     display: none;
   }
-  
-  .loadMoremall {
-    margin-top: -45px;
-  }
   .loadMorehos,
   .loadMoreedu,
   .loadMoreoffc,
@@ -2360,7 +2358,6 @@ body.dark-theme {
   }
   .loadMoremall {
     margin-left: -6rem;
-    margin-top: 1.5rem;
   }
   .loadMorehos {
     margin-left: 15rem;
