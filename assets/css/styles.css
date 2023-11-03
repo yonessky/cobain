@@ -2102,13 +2102,13 @@ body.dark-theme {
   }
   .loadMoreproject,
   .loadMorehos,
-  .loadMoreedu,
   .loadMoreoffc,
   .loadMoresports,
   .loadMoreother {
     margin-top: 10%;
   }
-  .loadMoremall {
+  .loadMoremall,
+  .loadMoreedu {
     margin-top: 0;
   }
 }
@@ -2153,13 +2153,13 @@ body.dark-theme {
   }
   .loadMoreproject,
   .loadMorehos,
-  .loadMoreedu,
   .loadMoreoffc,
   .loadMoresports,
   .loadMoreother {
     margin-top: 10%;
   }
-  .loadMoremall {
+  .loadMoremall,
+  .loadMoreedu {
     margin-top: 0;
   }
   .card-tahun {
@@ -2340,7 +2340,8 @@ body.dark-theme {
     margin-top: -1.5rem;
   }
   .loadMoreedu {
-    margin-left: 15rem;
+    margin-left: 70%;
+    margin-top: -20%;
   }
   .loadMoreoffc {
     margin-left: -7rem;
