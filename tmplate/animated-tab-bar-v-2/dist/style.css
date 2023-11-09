@@ -59,7 +59,6 @@ body {
 }
 
 .menu::after {
-
     height: 5% ;
     width: 35% ;
     bottom: 10% ;
@@ -67,14 +66,11 @@ body {
     position: absolute ;
     border-radius: 1em ;
     background-color: #f2f3f4 ;
-
-
 }
 
 .menu__item {
-
-    all: unset ;
-    flex-grow: 1 ;
+    all: unset;
+    flex-grow: 1;
     display: flex ;
     cursor: pointer ;
     overflow: hidden ;
@@ -83,7 +79,7 @@ body {
     align-items: center ;
     color: var(--color-1) ;
     justify-content: center ;
-    transition: flex-grow var(--duration) var(--cubic) ;
+    transition: flex-grow var(--duration) ;
     
 }
 
@@ -178,12 +174,16 @@ body {
     --duration-icon: 1s ;
     
     fill: none ; 
-    width: 2.5em ;
-    height: 2.5em ;
+    width: em ;
+    height: 3em ;
     display: block ;
     stroke-width: 15 ;
     stroke-miterlimit: 10 ;
     
+}
+.icon i {
+    color: hsl(228, 15%, 50%);
+    font-size: 3rem;
 }
 
 
