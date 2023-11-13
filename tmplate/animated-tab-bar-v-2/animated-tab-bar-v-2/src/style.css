@@ -55,14 +55,11 @@ body {
     font-size: .55em ;
     
   }
-
-  .icon {
-    font-size: .55em;
-  }
   
 }
 
 .menu::after {
+
     height: 5% ;
     width: 35% ;
     bottom: 10% ;
@@ -70,11 +67,14 @@ body {
     position: absolute ;
     border-radius: 1em ;
     background-color: #f2f3f4 ;
+
+
 }
 
 .menu__item {
-    all: unset;
-    flex-grow: 1;
+
+    all: unset ;
+    flex-grow: 1 ;
     display: flex ;
     cursor: pointer ;
     overflow: hidden ;
@@ -83,7 +83,7 @@ body {
     align-items: center ;
     color: var(--color-1) ;
     justify-content: center ;
-    transition: flex-grow var(--duration) ;
+    transition: flex-grow var(--duration) var(--cubic) ;
     
 }
 
@@ -178,13 +178,11 @@ body {
     --duration-icon: 1s ;
     
     fill: none ; 
-    width: 1em ;
-    height: 1em ;
+    width: 2.5em ;
+    height: 2.5em ;
     display: block ;
     stroke-width: 15 ;
     stroke-miterlimit: 10 ;
-    color: hsl(228, 15%, 50%);
-    font-size: 3rem;
     
 }
 
@@ -196,9 +194,9 @@ body {
 
 @keyframes home {
 
-    0% {
+    25% {
 
-        transform: translate3d(0, -.5em , 0) ;
+        transform: translate3d(0, -.8em , 0) ;
 
     }
 
@@ -213,7 +211,7 @@ body {
 
 #strategy-anm {
     
-    /* transform: scaleX(.85) ; */
+    transform: scaleX(.85) ;
     transform-origin: center ;
 
 }

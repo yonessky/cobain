@@ -45,6 +45,12 @@
   /*========== z index ==========*/
   --z-tooltip: 10;
   --z-fixed: 100;
+
+  /*========== border box ===========*/
+  --duration: .45s;
+  --cubic: cubic-bezier(0.4, 0, 0.2, 1);
+  --color-1: #d5dadd;
+  --color-2: #51d5c2;
 }
 
 /* Responsive typography */
@@ -1993,12 +1999,12 @@ body.dark-theme {
     margin: 0 0 16px 2px;
     transform: none;
   }
-  .loadMoreproject,
   .loadMoreoffc,
   .loadMoresports,
   .loadMoreother {
     margin-top: 10%;
   }
+  .loadMoreproject,
   .loadMoremall {
     margin-top: 0;
   }
@@ -2049,7 +2055,7 @@ body.dark-theme {
     justify-content: center;
   }
   .loadMoreproject {
-    margin-top: 10%;
+    margin-top: 5%;
   }
   .loadMoremall {
     margin-top: 0;
@@ -2227,7 +2233,7 @@ body.dark-theme {
   }
   .loadMoreproject {
     margin-left: 75%;
-    margin-top: 10%;
+    margin-top: 0;
   }
   .loadMoremall {
     margin-left: -35%;
@@ -2507,7 +2513,7 @@ body.dark-theme {
     display: none;
   }
   .loadMoreproject {
-    margin-top: 10%;
+    margin-top: 0;
   }
 }
 
