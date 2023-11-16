@@ -151,7 +151,7 @@ const scrollActive = () => {
       sectionTop = current.offsetTop - 58,
       sectionId = current.getAttribute("id"),
       sectionsClass = document.querySelector(
-        ".nav__menu a[href*=" + sectionId + "]"
+        ".nav-container a[href*=" + sectionId + "]"
       );
 
     if (scrollY > sectionTop && scrollY <= sectionTop + sectionHeight) {
@@ -339,29 +339,53 @@ loadMore('.loadMoresports', '.project-hiddensports1 > .card');
 loadMore('.loadMoreother', '.project-hiddenother > .card');
 loadMore('.loadMoreother', '.project-hiddenother1 > .card');
 
-// let loadMoreBtn = document.querySelector('#load-more');
-// let currentItem = 3;
+/*=============== NAVBAR ===============*/
 
-// loadMoreBtn.onclick = () =>{
-//    let boxes = [...document.querySelectorAll('.container .box-container .box')];
-//    for (var i = currentItem; i < currentItem + 3; i++){
-//       boxes[i].style.display = 'inline-block';
-//    }
-//    currentItem += 3;
+const navButton = document.querySelectorAll(".menu-item");
+let activeButton = document.querySelector(".menu-item.active");
 
-//    if(currentItem >= boxes.length){
-//       loadMoreBtn.style.display = 'none';
-//    }
-// }
+navButton.forEach(item => {
 
-// $(document).ready(function(){
-//   $(".content").slice(0, 4).show();
-//   $("#loadMore").on("click", function(e){
-//     e.preventDefault();
-//     $(".content:hidden").slice(0, 4).slideDown();
-//     if($(".content:hidden").length == 0) {
-//       $("#loadMore").text("No Content").addClass("noContent");
-//     }
-//   });
-  
-// })
+    const text = item.querySelector(".menu-text");
+    setLineWidth(text, item);
+
+    window.addEventListener("resize", () => {
+        setLineWidth(text, item);
+    })
+
+    item.addEventListener("click", function() {
+        if (this.classList.contains("active")) return;
+
+        this.classList.add("active");
+        
+        if (activeButton) {
+            activeButton.classList.remove("active");
+            activeButton.querySelector(".menu-text").classList.remove("active");
+        }
+        
+        handleTransition(this, text);
+        activeButton = this;
+
+    });
+
+    
+});
+
+
+function setLineWidth(text, item) {
+    const lineWidth = text.offsetWidth + "px";
+    item.style.setProperty("--lineWidth", lineWidth);
+}
+
+function handleTransition(item, text) {
+
+    item.addEventListener("transitionend", (e) => {
+
+        if (e.propertyName != "flex-grow" || 
+        !item.classList.contains("active")) return;
+
+        text.classList.add("active");
+        
+    });
+
+}

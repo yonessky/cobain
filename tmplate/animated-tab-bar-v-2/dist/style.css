@@ -95,7 +95,7 @@ body {
     
 }
 
-.menu__item::before {
+/* .menu__item::before {
 
     top: 9% ;
     left: 18.4% ;
@@ -109,7 +109,7 @@ body {
     background-color: #fdecef ;
     transition: transform var(--duration) var(--cubic) ;
 
-}
+} */
 
 .menu__item::after {
 
