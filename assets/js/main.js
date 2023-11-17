@@ -151,7 +151,7 @@ const scrollActive = () => {
       sectionTop = current.offsetTop - 58,
       sectionId = current.getAttribute("id"),
       sectionsClass = document.querySelector(
-        ".nav-container a[href*=" + sectionId + "]"
+        ".nav-menu a[href*=" + sectionId + "]"
       );
 
     if (scrollY > sectionTop && scrollY <= sectionTop + sectionHeight) {
@@ -293,26 +293,26 @@ cardGal.forEach((tab) => {
 });
 
 /** Filter bottom **/
-const buttons = document.querySelectorAll(".card-buttons button");
-const cardSections = document.querySelectorAll(".card-section");
-const card = document.querySelector(".card");
+// const buttons = document.querySelectorAll(".card-buttons button");
+// const cardSections = document.querySelectorAll(".card-section");
+// const card = document.querySelector(".card");
 
-const handleButtonClick = e => {
-  const targetSection = e.target.getAttribute("data-section");
-  const section = document.querySelector(targetSection);
-  targetSection !== "#cardabout" ?
-  card.classList.add("is-active") :
-  card.classList.remove("is-active");
-  card.setAttribute("data-state", targetSection);
-  cardSections.forEach(s => s.classList.remove("is-active"));
-  buttons.forEach(b => b.classList.remove("is-active"));
-  e.target.classList.add("is-active");
-  section.classList.add("is-active");
-};
+// const handleButtonClick = e => {
+//   const targetSection = e.target.getAttribute("data-section");
+//   const section = document.querySelector(targetSection);
+//   targetSection !== "#cardabout" ?
+//   card.classList.add("is-active") :
+//   card.classList.remove("is-active");
+//   card.setAttribute("data-state", targetSection);
+//   cardSections.forEach(s => s.classList.remove("is-active"));
+//   buttons.forEach(b => b.classList.remove("is-active"));
+//   e.target.classList.add("is-active");
+//   section.classList.add("is-active");
+// };
 
-buttons.forEach(btn => {
-  btn.addEventListener("click", handleButtonClick);
-});
+// buttons.forEach(btn => {
+//   btn.addEventListener("click", handleButtonClick);
+// });
 
 /** Load More **/
 
