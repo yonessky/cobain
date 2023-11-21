@@ -372,7 +372,7 @@ body.dark-theme {
     width: 380px;
     display: flex;
     height: 4em;
-    user-select: none;
+    /* user-select: none; */
     position: fixed;
     align-items: center;
     padding: 0 2em 2em;
@@ -389,7 +389,7 @@ body.dark-theme {
   }
   .dark-theme .nav-menu {
     /* border: 1px solid; */
-    box-shadow: 0 4px 8px hsla(228, 66%, 45%, .25);
+    box-shadow: 0 4px 8px hsla(0, 0%, 100%, .35);
   }
   .menu-item {
     /* all: unset; */
@@ -404,19 +404,6 @@ body.dark-theme {
     justify-content: center;
     transition: flex-grow var(--duration);
   }
-  .menu-item::after {
-    left: 0;
-    bottom: 6px;
-    content: " ";
-    height: 0.15em;
-    position: absolute;
-    border-radius: 2em;
-    transform-origin: left center;
-    background-color: currentColor;
-    width: calc( var(--lineWidth) + 5px );
-    transform: translate3d(3em , 0, 0) scaleX(0);
-    transition: transform calc( var(--duration) + .2s) var(--cubic);
-  }
 
   .nav-list {
     flex-grow: 1;
@@ -424,7 +411,7 @@ body.dark-theme {
     /* gap: 1em; */
     /* cursor: pointer; */
     /* overflow: hidden; */
-    /* padding-top: 0.5em; */
+    padding-top: 0.5em;
     /* position: relative; */
     justify-content: center;
     align-items: center;
@@ -441,15 +428,16 @@ body.dark-theme {
     color: #7c94a3;
   }
   .menu-text {
-    margin-bottom: 4px;
-    margin-left: 5px;
-    left: 3.8em;
+    font-family: var(--custom-font);
+    margin-bottom: 5%;
+    margin-left: 1%;
+    left: 54%;
     font-size: .9rem;
     position: absolute;
     text-transform: capitalize;
     letter-spacing: .01em;
-    transform: translateX(3rem);
-    /* transform: translate3d(0, 109%, 0); */
+    /* transform: translateX(110%); */
+    transform: translate3d(120%, 0, 0);
     transition: transform calc( var(--duration) / 3.7);
   }
 
@@ -475,10 +463,6 @@ body.dark-theme {
   .nav__link i {
     font-size: 1.25rem;
   }
-
-  /* .nav__link span {
-    display: none;
-  } */
   .active #home-anm {
     animation: home var(--duration-icon);
   }
@@ -944,12 +928,6 @@ body.dark-theme {
   font-size: var(--normal-font-size);
 }
 
-@media screen and (max-width: 576px) {
-  .services__list {
-    display: grid;
-  }
-}
-
 .services__item {
   position: relative;
   margin-bottom: 30px;
@@ -1151,21 +1129,6 @@ body.dark-theme {
 
 .accordion-open .services__accordion-arrow i {
   transform: rotate(-180deg);
-}
-
-/*-----------------------
-    Features
-------------------------*/
-@media (max-width: 576px) {
-
-  .about__description {
-    font-size: var(--small-font-size);
-  }
-
-  .services__item .services__item-desc {
-    font-size: var(--small-font-size);
-    margin-bottom: 10px;
-  }
 }
 
 /*============================ CONTACT =============================*/
@@ -2012,9 +1975,9 @@ body.dark-theme {
 }
 
 @media screen and (max-width: 320px) {
-  .nav-menu {
+  /* .nav-menu {
     padding: 1.3rem 1.5rem;
-  }
+  } */
   .home__value {
     column-gap: 1rem;
   }
@@ -2188,14 +2151,36 @@ body.dark-theme {
 }
 
 /* For medium devices */
+@media screen and (max-width: 576px) {
+  .about__description {
+    font-size: var(--small-font-size);
+  }
+  .services__item .services__item-desc {
+    font-size: var(--small-font-size);
+    margin-bottom: 10px;
+  }
+  .services__list {
+    display: grid;
+  }
+  .nav-menu {
+    width: 100%;
+  }
+  .menu-text {
+    transform: translateX(200%);
+  }
+  .menu-item.active::after {
+    display: none;
+  }
+  .menu-text.active  {
+    transform: translate3d(-25%, 0, 0);
+  }
+}
+
 @media screen and (min-width: 576px) {
   section {
     padding-top: 60px;
     padding-bottom: 60px;
   }
-  /* .nav-menu {
-    width: 342px;
-  } */
   .home__search {
     width: 412px;
   }
@@ -2378,13 +2363,22 @@ body.dark-theme {
   .nav {
     height: calc(var(--header-height) + 1.5rem);
   }
-  .dark-theme .nav__menu {
+  .dark-theme .nav-menu {
     box-shadow: none;
   }
   .nav-menu {
     width: initial;
     margin-left: auto;
     box-shadow: none;
+  }
+  .menu-item {
+    position: relative;
+    flex-grow: 1;
+    display: flex;
+    cursor: pointer;
+  }
+  .menu-text {
+    font-family: var(--custom-font);
   }
   .nav-list {
     display: flex;
@@ -2395,9 +2389,6 @@ body.dark-theme {
     font-family: var(--custom-font);
   }
   .icon-link i {
-    display: none;
-  }
-  .menu-icon {
     display: none;
   }
   .nav__button {
@@ -2420,7 +2411,7 @@ body.dark-theme {
     margin: 0 3rem;
     color: var(--text-color-light);
   }
-  .scroll-header .nav__link,
+  .scroll-header .icon-link,
   .scroll-header .change-theme {
     color: var(--text-color);
   }

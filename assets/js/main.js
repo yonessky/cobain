@@ -373,7 +373,7 @@ navButton.forEach(item => {
 
 
 function setLineWidth(text, item) {
-    const lineWidth = text.offsetWidth + "px";
+    const lineWidth = text.offsetWidth + "%";
     item.style.setProperty("--lineWidth", lineWidth);
 }
 
