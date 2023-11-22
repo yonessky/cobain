@@ -369,13 +369,13 @@ body.dark-theme {
 @media screen and (max-width: 1023px) {
   .nav-menu {
     margin: 0 auto;
-    width: 380px;
+    width: 420px;
     display: flex;
     height: 4em;
     /* user-select: none; */
     position: fixed;
     align-items: center;
-    padding: 0 2em 2em;
+    padding: 0 5% 5%;
     justify-content: center;
     /* background-color: #ffffff; */
     background-color: var(--container-color);
@@ -393,11 +393,13 @@ body.dark-theme {
   }
   .menu-item {
     /* all: unset; */
+    /* outline: 1px solid; */
     flex-grow: 1;
     display: flex;
+    margin-right: 0px;
     cursor: pointer;
     overflow: hidden;
-    padding-top: 2rem;
+    padding-top: 10%;
     position: relative;
     align-items: center;
     /* color: #7c94a3; */
@@ -406,6 +408,7 @@ body.dark-theme {
   }
 
   .nav-list {
+    /* outline: 1px solid; */
     flex-grow: 1;
     display: flex;
     /* gap: 1em; */
@@ -429,9 +432,8 @@ body.dark-theme {
   }
   .menu-text {
     font-family: var(--custom-font);
-    margin-bottom: 5%;
-    margin-left: 1%;
-    left: 54%;
+    left: 4rem;
+    bottom: .9rem;
     font-size: .9rem;
     position: absolute;
     text-transform: capitalize;
@@ -2164,8 +2166,10 @@ body.dark-theme {
   }
   .nav-menu {
     width: 100%;
+    padding: 0 3% 8%;
   }
   .menu-text {
+    left: 4rem;
     transform: translateX(200%);
   }
   .menu-item.active::after {
